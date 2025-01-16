@@ -20,31 +20,49 @@ const Header = () => {
               <h1 className="head-text">Kiprotich Davis</h1>
             </div>
           </div>
-          {/* <div className="tag-cmp app__flex"> */}
+
+          <div className="app__flex">
             <span className="primary-text">
               {" "}
-              <h3>
+              <h6>
                 {" "}
                 <Typical
                   loop={Infinity}
                   steps={[
                     "Front End Developer",
-                    1000,
+                    800,
                     "Networking Engineer",
-                    1000,
+                    800,
                     "Electrical Engineer",
-                    1000,
+                    800,
                     "Cloud Engineering Enthusiast",
-                    1000,
+                    800,
                     "Ethical Hacking Enthusiast",
-                    1000,
+                    800,
                   ]}
                 />
-              </h3>
+              </h6>
             </span>
+          </div>
           </div>
         {/* </div> */}
       </motion.div>
+      
+      <motion.div
+      whileInView={{ opacity: [0, 1] }}
+      transition={{ duration: 0.5, delayChildren: 0.5 }}
+      className="app__header-img"
+    >
+      <img src={images.profile} alt="profile_bg" />
+      <motion.img
+        whileInView={{ scale: [0, 1] }}
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        src={images.circle}
+        alt="profile_circle"
+        className="overlay_circle"
+      />
+    </motion.div>
+
     </div>
   );
 };
