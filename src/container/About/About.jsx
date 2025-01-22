@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.scss";
+import profile from '../../assets/profile.png'
 
 const About = () => {
     // Sample code to display
@@ -23,7 +24,7 @@ const About = () => {
       </p>
     </div>
     <div class="about-image">
-      <img src="path-to-your-image.jpg" alt="About me image" />
+      <img src={profile} alt="profile pic" />
     </div>
   </div>
 </div>
