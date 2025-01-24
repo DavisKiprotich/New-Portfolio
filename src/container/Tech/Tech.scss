@@ -1,0 +1,52 @@
+.tech-section {
+    background-color: #f8f9fa; // Light grey background for contrast
+    padding: 4rem 2rem;
+    text-align: center;
+  
+    .tech-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #333; // Dark text color
+      margin-bottom: 3rem;
+    }
+  
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); // Responsive grid
+      gap: 2rem;
+      justify-items: center;
+    }
+  
+    .tech-card {
+      display: flex;
+      align-items: center;
+      justify-content: start; // Align content horizontally
+      background-color: #ffffff;
+      border: 1px solid #ddd; // Subtle border
+      border-radius: 8px; // Slightly rounded corners
+      padding: 1rem 1.5rem;
+      width: 100%; // Full width of the grid cell
+      max-width: 400px; // Prevent the card from becoming too wide
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+      &:hover {
+        transform: translate(-5px, -5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+  
+      .tech-icon {
+        width: 40px; // Icon size
+        height: 40px; // Maintain square ratio
+        margin-right: 1rem; // Space between icon and text
+      }
+  
+      .tech-name {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #495057; // Neutral dark grey
+        text-align: left;
+      }
+    }
+  }
+  
