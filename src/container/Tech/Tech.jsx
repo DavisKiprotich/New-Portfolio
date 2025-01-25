@@ -50,7 +50,7 @@ const Tech = () => {
     </div>
     <div class="tech-card">
       <img src={vmware} alt="vmware Icon" class="tech-icon" />
-      <span class="tech-name">VMware vSphere</span>
+      <span class="tech-name">VMware</span>
     </div>
     <div class="tech-card">
       <img src={pythonapp} alt="python Icon" class="tech-icon" />
