@@ -1,65 +1,51 @@
 import React from 'react'
 import './Work.scss'
+import image1 from '../../assets/about01.png'
+import image2 from '../../assets/about02.png'
+import image3 from '../../assets/about03.png'
+
 
 const Work = () => {
   const projects = [
     {
-      title: "Raila Odinga for AU",
-      description: "An official website for Raila Odinga AU chairmanship campaign.",
-      technologies: ["Tailwind CSS", "React Js", "SEO"],
-      image: "https://via.placeholder.com/400x200",
-      link: "#"
+      image: {image1}, // Replace with actual project image URL
+      title: "Project 1",
+      technologies: ["React", "Tailwind CSS"],
+      link: "#",
     },
     {
-      title: "NexusScale",
-      description:
-        "This is a website that allows users to order templates for sending messages to their loved ones, making it easier to express feelings and stay connected with their loved ones.",
-      technologies: ["AI", "Rest API", "FastApi"],
-      image: "https://via.placeholder.com/400x200",
-      link: "#"
+      image: {image2},
+      title: "Project 2",
+      technologies: ["Django", "AI"],
+      link: "#",
     },
     {
-      title: "Hazina Africa",
-      description:
-        "Hazina Africa is a fintech startup focused on delivering AI-powered financial solutions to address diverse market needs across Africa.",
-      technologies: ["Django", "Rest API"],
-      image: "https://via.placeholder.com/400x200",
-      link: "#"
-    }
+      image: {image3},
+      title: "Project 3",
+      technologies: ["Vue", "Node.js"],
+      link: "#",
+    },
   ];
   return (
-
-    <section className="projects-container">
-      <div className="header">Projects Showcase</div>
-      <div className="card-container">
-        {projects.map((project, index) => (
-          <div className="card" key={index}>
-            <img src={project.image} alt={`${project.title} Image`} />
-            <div className="card-content">
-              <div className="card-title">{project.title}</div>
-              <div className="card-description">{project.description}</div>
-              <div className="technologies">
-                {project.technologies.map((tech, i) => (
-                  <span className="tech-tag" key={i}>
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="card-footer">
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                🔗
-              </a>
-            </div>
+    <section className="featured-work">
+    <h2 className="section-title">Featured Work</h2>
+    <div className="projects-grid">
+      {projects.map((project, index) => (
+        <div className="project-card" key={index}>
+          <img src={project.image} alt={project.title} className="project-image" />
+          <div className="overlay">
+            <h3 className="project-title">{project.title}</h3>
+            <p className="technologies">
+              {project.technologies.join(" | ")}
+            </p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="view-button">
+              View Project
+            </a>
           </div>
-        ))}
-      </div>
-      <div className="view-more">
-        <a href="https://github.com/yourgithubprofile" target="_blank" rel="noopener noreferrer">
-          View Other Projects
-        </a>
-      </div>
-    </section>
+        </div>
+      ))}
+    </div>
+  </section>   
   )
 }
 
