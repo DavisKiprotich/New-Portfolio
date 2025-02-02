@@ -8,19 +8,19 @@ import image3 from '../../assets/about03.png'
 const Work = () => {
   const projects = [
     {
-      image: {image1}, // Replace with actual project image URL
+      image: image1, // Replace with actual project image URL
       title: "Project 1",
       technologies: ["React", "Tailwind CSS"],
       link: "#",
     },
     {
-      image: {image2},
+      image: image2,
       title: "Project 2",
       technologies: ["Django", "AI"],
       link: "#",
     },
     {
-      image: {image3},
+      image: image3,
       title: "Project 3",
       technologies: ["Vue", "Node.js"],
       link: "#",
