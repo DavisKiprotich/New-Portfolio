@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCode } from "react-icons/fa";
 import { BsRouter } from "react-icons/bs";
-import { FaPenToSquare } from "react-icons/fa6";
+import { SiKalilinux } from "react-icons/si";
 import { TbCloudNetwork } from "react-icons/tb";
 
 import "./Skills.scss";
@@ -21,8 +21,7 @@ const Skills = () => {
           <p class="skill-description">
             I have a solid foundation in frontend development and can build
             websites from the ground up. My expertise includes HTML, CSS,
-            JavaScript, and modern frameworks like React, Next.js, Tailwind CSS,
-            and Phoenix LiveView.
+            JavaScript, and modern frameworks like React, Next.js and Tailwind CSS.
           </p>
         </div>
 
@@ -34,24 +33,22 @@ const Skills = () => {
           </div>
           <h3 class="skill-title">IoT Solutions</h3>
           <p class="skill-description">
-            I have a strong understanding of backend development, including
-            database design and API development. My experience includes working
-            with Elixir and the Phoenix framework for building robust, scalable
-            applications.
+          Proficient in deploying IoT systems, including the installation and configuration of routers, 
+          integration of fuel probes for real-time monitoring, and DC meters for energy management. 
+          Skilled in implementing smart power systems to enhance efficiency and ensure seamless connectivity in diverse environments.
           </p>
         </div>
 
         <div class="skill-card">
           <div class="icon">
             <i class="fas fa-pencil-alt">
-              <FaPenToSquare />
+              <SiKalilinux /> 
             </i>
           </div>
-          <h3 class="skill-title">Technical Writing</h3>
+          <h3 class="skill-title">Ethical Hacking</h3>
           <p class="skill-description">
-            I have a strong understanding of the content writing process. My
-            focus is on clarity, relevance, and SEO optimization. I ensure the
-            content aligns with the target audience and business goals.
+          Experienced in ethical hacking and penetration testing using tools such as Kali Linux and Wireshark, 
+          ensuring robust security by identifying vulnerabilities and strengthening system defenses.
           </p>
         </div>
 
@@ -63,9 +60,11 @@ const Skills = () => {
           </div>
           <h3 class="skill-title">Cloud and Networking</h3>
           <p class="skill-description">
-            I have a solid grasp of database design, specializing in efficient
-            and scalable data storage. My focus is on optimizing performance
-            while maintaining data integrity.
+          Skilled in cloud infrastructure management, 
+          utilizing VMware vSphere for virtualization to 
+          optimize resources and streamline operations. 
+          Possesses strong networking expertise, ensuring seamless connectivity and 
+          maintaining the stability of systems to support business continuity and productivity.
           </p>
         </div>
       </div>

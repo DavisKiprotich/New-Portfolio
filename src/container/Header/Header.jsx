@@ -9,39 +9,40 @@ const Header = () => {
   return (
     <header class="header">
         <div class="header-content">
-            <h4>LET'S BUILD SOMETHING BEAUTIFUL</h4>
+            <h4>TURNING YOUR IDEAS INTO REALITY!</h4>
             <h1>Hi, I am <span class="highlight">KIPROTICH DAVIS</span></h1>
-            <h2>I am a 
+            <h2>I am 
               <span class="role">
                 {" "}
-                <span>
+                <span className="highlight-text">
                   {" "}
                   <Typical
                     loop={Infinity}
                     steps={[
                       "Front End Developer",
-                      1000,
+                      2000,
                       "Networking Engineer",
-                      1000,
-                      "IOT Solutions Engineer",
-                      1000,
-                      "Cloud Engineering Enthusiast",
-                      1000,
-                      "Ethical Hacking Enthusiast",
-                      1000,
+                      2000,
+                      "IOT Solutions",
+                      2500,
+                      "Cloud Computing",
+                      2500,
+                      "Virtualization",
+                      2500,
+                      "Ethical Hacker",
+                      2000,
                     ]}
                   />
                 </span>
               </span>
             </h2>
-            <p>I am a full-stack developer with 4 years of experience, trained at Microverse and Moringa. I specialize in building scalable web applications using Elixir, Phoenix, and React JS. From startups to enterprise solutions, I’ve delivered projects that prioritize user experience and performance. I also create content around tech to help developers grow. Let’s create something impactful together.</p>
+            <p>I am a frontend developer with over 2 years of experience in building responsive and dynamic websites using HTML, CSS, React, and Tailwind CSS. Alongside my web development skills, I have a strong background in networking, IoT solutions, cloud computing, virtualization, CI/CD, and ethical hacking, allowing me to approach projects with a broad technical perspective.</p>
             <div class="social-icons">
                 <a href="#" className="icon linkedin"><FaLinkedin /></a>
                 <a href="#" className="icon github"><FaGithub /></a>
                 <a href="#" className="icon twitter"><FaSquareXTwitter /></a>
                 <a href="#" className="icon phone"><FaPhoneAlt /></a>
                 <a href="#" className="icon email"><MdAttachEmail /></a>
-                {/* <a href="#" className="icon tiktok">&#xf16d;</a> */}
             </div>
         </div>
     </header>

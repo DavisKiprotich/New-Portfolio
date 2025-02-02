@@ -1,0 +1,76 @@
+.work-experience {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  color: #000;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #000;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #007bff; /* Primary color */
+  margin: 0.5rem auto 0;
+} 
+
+.experience-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.card-description span{
+  text-decoration: none !important;
+}
+
+.highlight-green {
+  color: #28a745;
+}
+
+.highlight-blue {
+  color: #007bff;
+}
+.no-underline-bold {
+  font-weight: bold;
+  text-decoration: none;
+}
+.no-underline {
+  text-decoration: none;
+}
+
+.highlight-pink {
+  color: #d63384;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
