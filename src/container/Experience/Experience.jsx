@@ -11,20 +11,24 @@ const Experience = () => {
         <div className="card">
           <span className="card-number">01</span>
           <h3 className="card-title">
-            <span className="highlight-green">Pesaflow Limited</span>, Full stack Elixir Developer
+            <span className="highlight-green">AlanDick & Co(E.A) Ltd</span>, Power and IT Support Engineer
           </h3>
           <p className="card-description">
-            Currently working as a full stack software developer. Stack includes Elixir, Phoenix, and Vue.js.
+          Skilled in IoT deployment, networking, and maintaining Cloud Infrastructure, 
+          including VMware vSphere, router configuration, fuel probe installation, 
+          DC meter integration and servicing rectifiers like Eltek and Megmeet.
           </p>
         </div>
 
         <div className="card">
           <span className="card-number">02</span>
           <h3 className="card-title">
-            <span className="highlight-blue">The Open Institute</span>, Software Developer
+            <span className="highlight-blue">Netline Technologies Limited</span>, Head of Operations
           </h3>
           <p className="card-description">
-            I work as a software developer for a digital health project. Developed and trained a <span className="highlight-blue">chatbot</span> for community health workers.
+          Led the design and creation of the <a className='no-underline' href='https://netline.co.ke/' target="_blank"><span className="highlight-blue ">Company Website</span></a> using WordPress, 
+          while also overseeing the maintenance of networking infrastructure and electro-mechanical installations. 
+          Ensured operational efficiency and system reliability across all aspects of the company’s technical operations.
           </p>
         </div>
 
@@ -34,7 +38,9 @@ const Experience = () => {
             <span className="highlight-pink">Freelancer</span>, Software Developer
           </h3>
           <p className="card-description">
-            I have developed and deployed several projects for clients. I have worked with clients from all over the world, e.g., <span className="highlight-pink">10xbeast</span>, <span className="highlight-pink">Mwamba Rugby</span>, <span className="highlight-pink">Raila Odinga</span>, etc.
+            I have developed and deployed several projects for clients. I have worked with clients from all over the world, e.g., 
+            <a className='no-underline' href='#' target="_blank"><span className="highlight-pink ">myblog</span></a>, 
+            <a className='no-underline' href='#' target='_blank'><span className="highlight-pink">Mwamba Rugby</span></a>,  etc.
           </p>
         </div>
       </div>

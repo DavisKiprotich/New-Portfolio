@@ -5,7 +5,7 @@
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
   color: #000;
@@ -47,6 +47,9 @@
   font-weight: 600;
   margin-bottom: 0.75rem;
 }
+.card-description span{
+  text-decoration: none !important;
+}
 
 .highlight-green {
   color: #28a745;
@@ -54,6 +57,13 @@
 
 .highlight-blue {
   color: #007bff;
+}
+.no-underline-bold {
+  font-weight: bold;
+  text-decoration: none;
+}
+.no-underline {
+  text-decoration: none;
 }
 
 .highlight-pink {
