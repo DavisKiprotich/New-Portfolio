@@ -128,3 +128,14 @@
     background-color: #007bff;
   }
   
+  @media (min-width: 768px) {
+    .contact-container {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  
+    .contact-info,
+    .contact-form {
+      flex: 1;
+    }
+  }
