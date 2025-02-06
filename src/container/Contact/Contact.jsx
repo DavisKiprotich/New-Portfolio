@@ -5,6 +5,7 @@ import "./Contact.scss";
 const Contact = () => {
   return (
     <section className="contact-section">
+      <h2 className='section-title'>Get In Touch</h2>
       <div className="contact-container">
         <div className="contact-info">
           <h2>Roy Kiprop</h2>
