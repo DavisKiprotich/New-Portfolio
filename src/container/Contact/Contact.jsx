@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { CiMail } from "react-icons/ci";
+import { FaPhone } from "react-icons/fa6";
 import "./Contact.scss";
 
 const Contact = () => {
@@ -16,12 +17,12 @@ const Contact = () => {
           </p>
           <div className="contact-details">
             <div className="contact-item">
-              <span className="icon">📧</span>
+              <span className="icon"><CiMail /></span>
               <span>Email</span>
               <p>roykiprop590@gmail.com</p>
             </div>
             <div className="contact-item">
-              <span className="icon">📞</span>
+              <span className="icon"><FaPhone /></span>
               <span>Phone</span>
               <p>+254 711 470 560</p>
             </div>
