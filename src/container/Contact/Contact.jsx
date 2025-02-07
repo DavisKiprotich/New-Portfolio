@@ -1,6 +1,9 @@
 import React from 'react';
 import { CiMail } from "react-icons/ci";
 import { FaPhone } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 import "./Contact.scss";
 
 const Contact = () => {
@@ -19,19 +22,19 @@ const Contact = () => {
             <div className="contact-item">
               <span className="icon"><CiMail /></span>
               <span>Email</span>
-              <p>roykiprop590@gmail.com</p>
+              <p>davyzkorir@gmail.com</p>
             </div>
             <div className="contact-item">
               <span className="icon"><FaPhone /></span>
               <span>Phone</span>
-              <p>+254 711 470 560</p>
+              <p>+254 727 111 264</p>
             </div>
           </div>
           <div className="social-links">
             <h4>Let's Connect:</h4>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">🔗</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">❌</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">🐙</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer"><FaSquareXTwitter /></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
           </div>
         </div>
         <div className="contact-form">
