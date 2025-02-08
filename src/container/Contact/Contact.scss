@@ -37,7 +37,7 @@
   background-color: #ffffff;
   border-radius: 10px;
   padding: 1.3rem;
-  // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex: 1;
 
 }
@@ -80,7 +80,7 @@
   height: 40px;
   border-radius: 50%; /* Circular icon container */
   font-size: 1.2rem;
-  color: #00bcd4; /* Icon color */
+  color: #050606; /* Icon color */
 }
 
 .contact-details  span {
@@ -108,7 +108,7 @@
 .social-links a {
   font-size: 1.5rem;
   margin-right: 0.5rem;
-  color: #00bcd4;
+  color: #040404; //social links color
   text-decoration: none;
   transition: color 0.3s;
 }

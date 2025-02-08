@@ -12,8 +12,7 @@ const Contact = () => {
       <h2 className='section-title'>Get In Touch</h2>
       <div className="contact-container">
         <div className="contact-info">
-          <h2>Roy Kiprop</h2>
-          <h3>Full Stack Developer</h3>
+          <h2>Kiprotich Davis</h2>
           <p>
             I'm always interested in hearing about new projects and opportunities. Let's
             collaborate to bring your ideas to life!
@@ -21,12 +20,10 @@ const Contact = () => {
           <div className="contact-details">
             <div className="contact-item">
               <span className="icon"><CiMail /></span>
-              <span>Email</span>
               <p>davyzkorir@gmail.com</p>
             </div>
             <div className="contact-item">
               <span className="icon"><FaPhone /></span>
-              <span>Phone</span>
               <p>+254 727 111 264</p>
             </div>
           </div>
