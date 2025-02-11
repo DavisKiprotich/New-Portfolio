@@ -1,5 +1,7 @@
 import React from 'react'
 import './Footer.scss'
+import {FaPhoneAlt} from "react-icons/fa";
+import { MdAttachEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -9,9 +11,9 @@ const Footer = () => {
           <h3>Roy Kiprop</h3>
           <p>Passionate developer crafting innovative digital solutions with modern technologies.</p>
           <div className="social-links">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
+            {/* <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a> */}
+            {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a> */}
+            {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a> */}
           </div>
         </div>
 
@@ -31,18 +33,18 @@ const Footer = () => {
           <h3>Contact Info</h3>
           <div className="contact-info">
             <div className="contact-item">
-              <FiPhone />
-              <span>+254 711 470 560</span>
+              <FaPhoneAlt/>
+              <span>+254 727 111 264</span>
             </div>
             <div className="contact-item">
-              <FiMail />
-              <span>roykiprop590@gmail.com</span>
+              <MdAttachEmail/>
+              <span>davyzkorir@gmail.com</span>
             </div>
           </div>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2025 Roy Kiprop. All rights reserved.</p>
+        <p>© 2025 Kiprotich Davis. All rights reserved.</p>
       </div>
     </footer>
   )
