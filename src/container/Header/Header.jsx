@@ -11,7 +11,7 @@ const Header = () => {
         <div class="header-content">
             <h4>TURNING YOUR IDEAS INTO REALITY!</h4>
             <h1>Hi, I am <span class="highlight">KIPROTICH DAVIS</span></h1>
-            <h2>I am 
+            <h2>I focus on 
               <span class="role">
                 {" "}
                 <span className="highlight-text">
@@ -19,9 +19,9 @@ const Header = () => {
                   <Typical
                     loop={Infinity}
                     steps={[
-                      "Front End Developer",
+                      "Front End Development",
                       2000,
-                      "Networking Engineer",
+                      "Networking",
                       2000,
                       "IOT Solutions",
                       2500,
@@ -29,7 +29,7 @@ const Header = () => {
                       2500,
                       "Virtualization",
                       2500,
-                      "Ethical Hacker",
+                      "Ethical Hacking",
                       2000,
                     ]}
                   />
