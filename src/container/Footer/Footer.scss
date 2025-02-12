@@ -78,6 +78,10 @@
             }
           }
         }
+
+        .contact-info{
+          background-color: #0f172a;;
+        }
   
         .contact-info {
           .contact-item {
@@ -85,6 +89,7 @@
             align-items: center;
             gap: 1rem;
             margin-bottom: 0.8rem;
+            // background-color: #0f172a;
   
             svg {
               font-size: 1.2rem;

@@ -2,18 +2,21 @@ import React from 'react'
 import './Footer.scss'
 import {FaPhoneAlt} from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
-          <h3>Roy Kiprop</h3>
-          <p>Passionate developer crafting innovative digital solutions with modern technologies.</p>
+          <h3>Kiprotich Davis</h3>
+          <p>Passionate developer excelling in cloud, ethical hacking, networking, and frontend web development, creating cutting-edge digital solutions.</p>
           <div className="social-links">
-            {/* <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a> */}
-            {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a> */}
-            {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a> */}
+            <a href="https://github.com/DavisKiprotich/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+            <a href="https://linkedin.com/in/kiprotich-davis-652b49243" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://x.com/werigan_non" target="_blank" rel="noopener noreferrer"><FaSquareXTwitter /></a>
           </div>
         </div>
 
