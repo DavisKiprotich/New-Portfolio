@@ -9,7 +9,7 @@ import "./Skills.scss";
 const Skills = () => {
   return (
     <section class="skillset">
-      <h2 class="skillset-title">My Expertise</h2>
+      <h2 class="skillset-title-ex">My Expertise</h2>
       <div class="skills-container">
         <div class="skill-card">
           <div class="icon">

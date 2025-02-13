@@ -1,23 +1,23 @@
 .work-experience {
   background-color: #f9f9f9;
   padding: 2rem;
-  color: #000;
+  // color: #000;
 }
 
-.section-title {
+.section-title-wk {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
-  color: #000;
+  color: #000 ;
   position: relative;
 }
 
-.section-title::after {
+.section-title-wk::after {
   content: "";
   display: block;
   width: 80px;
   height: 3px;
-  background-color: #007bff; /* Primary color */
+  background-color: var(--text-color); /* Primary color */
   margin: 0.5rem auto 0;
 } 
 

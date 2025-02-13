@@ -2,8 +2,9 @@ import React from 'react';
 import { CiMail } from "react-icons/ci";
 import { FaPhone } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { BsSend } from "react-icons/bs";
 import "./Contact.scss";
 
 const Contact = () => {
@@ -29,27 +30,27 @@ const Contact = () => {
           </div>
           <div className="social-links">
             <h4>Let's Connect:</h4>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a href="https://x.com" target="_blank" rel="noopener noreferrer"><FaSquareXTwitter /></a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+            <a href="https://linkedin.com/in/kiprotich-davis-652b49243/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://x.com/werigan_non/" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
+            <a href="https://github.com/DavisKiprotich/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
           </div>
         </div>
         <div className="contact-form">
           <form>
             <div className="form-group">
               <label htmlFor="name">Your Name</label>
-              <input type="text" id="name" placeholder="John Doe" />
+              <input className='textarea' type="text" id="name" placeholder="John Doe" />
             </div>
             <div className="form-group">
               <label htmlFor="email">Your Email</label>
-              <input type="email" id="email" placeholder="john@example.com" />
+              <input className='textarea' type="email" id="email" placeholder="john@example.com" />
             </div>
             <div className="form-group">
               <label htmlFor="message">Your Message</label>
               <textarea id="message" placeholder="Hello, I would like to talk about..."></textarea>
             </div>
             <button type="submit" className="send-button">
-              <span>Send Message</span>
+              <span><span className='message-icon'><BsSend /></span>Send Message</span>
             </button>
           </form>
         </div>

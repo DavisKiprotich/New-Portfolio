@@ -28,7 +28,7 @@ const Work = () => {
   ];
   return (
     <section className="featured-work">
-    <h2 className="section-title">Featured Work</h2>
+    <h2 className="section-title-fw">Featured Work</h2>
     <div className="projects-grid">
       {projects.map((project, index) => (
         <div className="project-card" key={index}>

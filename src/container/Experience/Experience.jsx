@@ -6,7 +6,7 @@ import './Experience.scss'
 const Experience = () => {
   return (
     <section className="work-experience">
-      <h2 className="section-title">My Work Experience</h2>
+      <h2 className="section-title-wk">My Work Experience</h2>
       <div className="experience-cards">
         <div className="card">
           <span className="card-number">01</span>
