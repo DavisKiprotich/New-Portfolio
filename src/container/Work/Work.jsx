@@ -1,30 +1,45 @@
 import React from 'react'
 import './Work.scss'
-import image1 from '../../assets/about01.png'
-import image2 from '../../assets/about02.png'
-import image3 from '../../assets/about03.png'
+import image1 from '../../assets/about04.png'
+import image2 from '../../assets/about2.png'
+import image3 from '../../assets/about5.png'
+import image4 from '../../assets/about3.png'
+import image5 from '../../assets/about1.png'
 
 
 const Work = () => {
   const projects = [
     {
       image: image1, // Replace with actual project image URL
-      title: "Project 1",
-      technologies: ["React", "Tailwind CSS"],
-      link: "#",
+      title: "Urban Threads",
+      technologies: ["React", "CSS"],
+      link: "https://ever-trendy-website-q8ynmj7gu-daviskiprotich.vercel.app/",
     },
     {
       image: image2,
-      title: "Project 2",
-      technologies: ["Django", "AI"],
-      link: "#",
+      title: "Todo List",
+      technologies: ["React", "CSS"],
+      link: "https://todo-list-simplified.vercel.app/",
     },
     {
       image: image3,
-      title: "Project 3",
-      technologies: ["Vue", "Node.js"],
-      link: "#",
+      title: "React Calculator",
+      technologies: ["React"],
+      link: "https://react-calculator-five-inky.vercel.app/",
     },
+    {
+      image: image4,
+      title: "Portfolio",
+      technologies: ["React", "CSS"],
+      link: "https://d-zilla-creatives-vvi5.vercel.app/",
+    },
+    {
+      image: image5,
+      title: "Landing Pages",
+      technologies: ["React", "CSS"],
+      link: "https://netline-technologies.vercel.app/",
+    },
+    
   ];
   return (
     <section className="featured-work">

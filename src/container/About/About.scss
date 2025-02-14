@@ -11,7 +11,7 @@
     color: #000;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--text-color);
+    border-bottom: 0.5px solid var(--text-color);
   }
 
   .about-content {
@@ -28,7 +28,7 @@
 
       .highlight {
         color: var(--text-color);
-        font-weight: bold;
+        font-weight: 400;
       }
     }
 

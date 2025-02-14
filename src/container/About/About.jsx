@@ -11,23 +11,21 @@ const About = () => {
       <div class="about-content">
         <div class="about-text">
           <p>
-            I am a <span class="highlight">software engineer</span> and{" "}
-            <span class="highlight">Full Stack Developer</span> with expertise
+            I am an <span class="highlight">Experienced Engineer</span> and{" "}
+            <span class="highlight">Frontend Developer</span> with expertise
             in
-            <span class="highlight">Elixir</span>,{" "}
-            <span class="highlight">Phoenix Live View</span>, and{" "}
-            <span class="highlight">React JS</span>. I am also a{" "}
-            <span class="highlight">Technical Writer</span>.
+            <span class="highlight"> Next JS</span>,{" "}
+            <span class="highlight">Tailwind CSS</span>, and{" "}
+            <span class="highlight">React JS</span>. I am also proficient in{" "}
+            <span class="highlight">Cloud Computing and Networking</span>.
           </p>
           <p>
             Over the last four years, I have gained considerable professional
-            experience in the technology industry. I am a graduate of
-            <span class="highlight">Microverse</span>, a remote international
-            learning institution where I collaborated with developers across the
-            globe.
+            experience in the tech industry in Penetration Testing, 
+            VMware vSphere virtualization, Bash scripting, penetration testing, and IoT.
           </p>
           <p>
-            Through my experiences, I have discovered my passion for teaching,
+            Through my experiences, I have discovered my passion for
             mentoring, and building impactful software solutions.
           </p>
         </div>

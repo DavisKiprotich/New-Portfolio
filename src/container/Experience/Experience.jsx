@@ -14,9 +14,12 @@ const Experience = () => {
             <span className="highlight-green">AlanDick & Co(E.A) Ltd</span>, Power and IT Support Engineer
           </h3>
           <p className="card-description">
-          Skilled in IoT deployment, networking, and maintaining Cloud Infrastructure, 
-          including VMware vSphere, router configuration, fuel probe installation, 
-          DC meter integration and servicing rectifiers like Eltek and Megmeet.
+          I am responsible for maintaining and managing the server infrastructure 
+          and networking within my company, ensuring seamless operations. 
+          Additionally, I oversee cloud infrastructure utilizing VMware vSphere virtualization. 
+          My role also involves IoT deployments for site monitoring, which includes 
+          configuring routers, installing fuel probes, integrating DC meters, and servicing rectifiers. 
+          These efforts collectively contribute to a stable and efficient working environment within the telecommunications industry.
           </p>
         </div>
 
@@ -29,6 +32,7 @@ const Experience = () => {
           Led the design and creation of the <a className='no-underline' href='https://netline.co.ke/' target="_blank"><span className="highlight-blue ">Company Website</span></a> using WordPress, 
           while also overseeing the maintenance of networking infrastructure and electro-mechanical installations. 
           Ensured operational efficiency and system reliability across all aspects of the company’s technical operations.
+          I also took an active role in upgrading the network infrastructure while continuously enhancing my frontend web development skills.
           </p>
         </div>
 
@@ -38,9 +42,9 @@ const Experience = () => {
             <span className="highlight-pink">Freelancer</span>, Software Developer
           </h3>
           <p className="card-description">
-            I have developed and deployed several projects for clients. I have worked with clients from all over the world, e.g., 
+            I have developed and deployed several projects . I have worked with clients from all over the world, e.g., 
             <a className='no-underline' href='#' target="_blank"><span className="highlight-pink ">myblog</span></a>, 
-            <a className='no-underline' href='#' target='_blank'><span className="highlight-pink">Mwamba Rugby</span></a>,  etc.
+            <a className='no-underline' href='#' target='_blank'><span className="highlight-pink"></span></a>,  etc.
           </p>
         </div>
       </div>
