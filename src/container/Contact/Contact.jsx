@@ -1,15 +1,35 @@
-import React from 'react';
+import React, { useRef }  from 'react';
 import { CiMail } from "react-icons/ci";
 import { FaPhone } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { BsSend } from "react-icons/bs";
 import "./Contact.scss";
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_uv42igf', 'template_eyex5t7', form.current, {
+        publicKey: 'U3yC0Wy8F6yvOuLKm',
+      })
+      .then(
+        () => {
+          toast.success('Rocketed Out');
+        },
+        (error) => {
+          toast.error(error);
+        },
+      );
+      e.target.reset();
+  };
   return (
-    <section className="contact-section">
+    <section className="contact-section" id='contact'>
       <h2 className='section-title'>Get In Touch</h2>
       <div className="contact-container">
         <div className="contact-info">
@@ -36,21 +56,21 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-form">
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <div className="form-group">
               <label htmlFor="name">Your Name</label>
-              <input className='textarea' type="text" id="name" placeholder="John Doe" />
+              <input className='textarea' type="text" id="name" placeholder="John Doe" name="from_name" required/>
             </div>
             <div className="form-group">
               <label htmlFor="email">Your Email</label>
-              <input className='textarea' type="email" id="email" placeholder="john@example.com" />
+              <input className='textarea' type="email" id="email" placeholder="john@example.com" name="from_email" required />
             </div>
             <div className="form-group">
               <label htmlFor="message">Your Message</label>
-              <textarea id="message" placeholder="Hello, I would like to talk about..."></textarea>
+              <textarea name='message'  id="message" placeholder="Hello, I would like to talk about..."></textarea>
             </div>
-            <button type="submit" className="send-button">
-              <span><span className='message-icon'><BsSend /></span>Send Message</span>
+            <button type="submit" value="Send" className="send-button">
+              <span>Send Message</span>
             </button>
           </form>
         </div>

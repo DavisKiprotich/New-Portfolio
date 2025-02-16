@@ -8,7 +8,7 @@ import "./Skills.scss";
 
 const Skills = () => {
   return (
-    <section class="skillset">
+    <section class="skillset" id="skills">
       <h2 class="skillset-title-ex">My Expertise</h2>
       <div class="skills-container">
         <div class="skill-card">

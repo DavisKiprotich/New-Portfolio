@@ -6,7 +6,7 @@ const About = () => {
   // Sample code to display
 
   return (
-    <div class="about">
+    <div class="about" id="about">
       <h2 class="about-title">Who am I?</h2>
       <div class="about-content">
         <div class="about-text">

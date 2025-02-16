@@ -10,7 +10,7 @@ import image5 from '../../assets/about1.png'
 const Work = () => {
   const projects = [
     {
-      image: image1, // Replace with actual project image URL
+      image: image1,
       title: "Urban Threads",
       technologies: ["React", "CSS"],
       link: "https://ever-trendy-website-q8ynmj7gu-daviskiprotich.vercel.app/",
@@ -42,7 +42,7 @@ const Work = () => {
     
   ];
   return (
-    <section className="featured-work">
+    <section className="featured-work" id='work'>
     <h2 className="section-title-fw">Featured Work</h2>
     <div className="projects-grid">
       {projects.map((project, index) => (

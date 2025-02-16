@@ -7,7 +7,7 @@ import { MdAttachEmail } from "react-icons/md";
 
 const Header = () => {
   return (
-    <header class="header">
+    <header class="header" id="home">
         <div class="header-content">
             <h4>TURNING YOUR IDEAS INTO REALITY!</h4>
             <h1>Hi, I am <span class="highlight">KIPROTICH DAVIS</span></h1>
