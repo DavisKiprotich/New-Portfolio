@@ -153,6 +153,7 @@
   border-radius: 5px;
   outline: none;
   transition: border-color 0.3s;
+  color: #ffffff;
 }
 
 .form-group input:focus,
@@ -226,4 +227,8 @@ textarea {
   .contact-container {
     max-width: 900px;
   }
+  .form-group input:focus,
+.form-group textarea:focus {
+  border-color: #00bcd4;
+}
 }
