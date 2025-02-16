@@ -5,6 +5,7 @@ import image2 from '../../assets/about2.png'
 import image3 from '../../assets/about5.png'
 import image4 from '../../assets/about3.png'
 import image5 from '../../assets/about1.png'
+import image6 from '../../assets/Netline.png'
 
 
 const Work = () => {
@@ -38,6 +39,12 @@ const Work = () => {
       title: "Landing Pages",
       technologies: ["React", "CSS"],
       link: "https://netline-technologies.vercel.app/",
+    },
+    {
+      image: image6,
+      title: "Netline Technologies Limited",
+      technologies: ["Wordpress"],
+      link: "https://netline.co.ke/",
     },
     
   ];

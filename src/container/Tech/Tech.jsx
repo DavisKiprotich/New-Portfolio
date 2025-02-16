@@ -11,6 +11,7 @@ import Reactapp from "../../assets/react.png";
 import Typescriptapp from "../../assets/typescript.png";
 import pythonapp from "../../assets/python.png";
 import Docker from "../../assets/Docker..jpg";
+import WordPress from "../../assets/WordPress.jpg";
 
 import "./Tech.scss";
 
@@ -66,6 +67,10 @@ const Tech = () => {
         <div class="tech-card">
           <img src={Docker} alt="Docker Icon" class="tech-icon" />
           <span class="tech-name">Docker</span>
+        </div>
+        <div class="tech-card">
+          <img src={WordPress} alt="Docker Icon" class="tech-icon" />
+          <span class="tech-name">WordPress</span>
         </div>
       </div>
     </section>
