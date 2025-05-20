@@ -1,26 +1,27 @@
 import React from 'react'
 import './Work.scss'
-import image1 from '../../assets/about04.png'
-import image2 from '../../assets/about2.png'
+import image1 from '../../assets/Netline.png'
+import image2 from '../../assets/DZilla.png'
 import image3 from '../../assets/about5.png'
 import image4 from '../../assets/about3.png'
 import image5 from '../../assets/about1.png'
-import image6 from '../../assets/Netline.png'
+import image6 from '../../assets/about2.png'
+import image7 from '../../assets/about04.png'
 
 
 const Work = () => {
   const projects = [
     {
       image: image1,
-      title: "Urban Threads",
-      technologies: ["React", "CSS"],
-      link: "https://ever-trendy-website-q8ynmj7gu-daviskiprotich.vercel.app/",
+      title: "Netline Technologies Limited",
+      technologies: ["Wordpress"],
+      link: "https://netline.co.ke/",
     },
     {
       image: image2,
-      title: "Todo List",
-      technologies: ["React", "CSS"],
-      link: "https://todo-list-simplified.vercel.app/",
+      title: "DZilla Creatives",
+      technologies: ["Next.js", "Tailwind CSS"],
+      link: "https://elegant-gumdrop-3fbdae.netlify.app/",
     },
     {
       image: image3,
@@ -42,9 +43,15 @@ const Work = () => {
     },
     {
       image: image6,
-      title: "Netline Technologies Limited",
-      technologies: ["Wordpress"],
-      link: "https://netline.co.ke/",
+      title: "Todo List",
+      technologies: ["React", "CSS"],
+      link: "https://todo-list-simplified.vercel.app/",
+    },
+    {
+      image: image7,
+      title: "Urban Threads",
+      technologies: ["React", "CSS"],
+      link: "https://ever-trendy-website-q8ynmj7gu-daviskiprotich.vercel.app/",
     },
     
   ];
