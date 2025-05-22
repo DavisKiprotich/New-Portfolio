@@ -57,7 +57,7 @@ const Work = () => {
     {
       image: image7,
       title: "Urban Threads",
-      technologies: ["React", "CSS", "IoT"],
+      technologies: ["React", "CSS"],
       category: "react",
       link: "https://ever-trendy-website-q8ynmj7gu-daviskiprotich.vercel.app/",
     },
