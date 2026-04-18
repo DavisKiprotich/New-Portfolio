@@ -5,24 +5,48 @@
 }
 
 .focus__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
   min-height: 100%;
   padding: 1.5rem;
   border-radius: 28px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--color-border);
+  overflow: hidden;
   transition: transform 0.25s ease, background-color 0.25s ease,
-    border-color 0.25s ease;
+    border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.focus__card:hover {
+.focus__card::before {
+  content: "";
+  position: absolute;
+  inset: auto -3rem -4rem auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(var(--focus-glow), 0.16), transparent 68%);
+  pointer-events: none;
+}
+
+.focus__card:hover,
+.focus__card:active {
   transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.16);
 }
 
 .focus__card--accent {
   background: var(--color-accent);
   border-color: rgba(242, 181, 61, 0.55);
   color: #252837;
+}
+
+.focus__copy,
+.focus__preview {
+  position: relative;
+  z-index: 1;
 }
 
 .focus__icon {
@@ -61,6 +85,127 @@
   line-height: 1.75;
 }
 
+.focus__preview {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 8.2rem);
+  gap: 0.85rem;
+  align-items: end;
+  margin-top: auto;
+  padding: 0.85rem;
+  border-radius: 22px;
+  background: rgba(15, 18, 27, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.focus__preview-surface {
+  position: relative;
+  min-height: 6.5rem;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 0.9rem;
+  display: grid;
+  align-content: end;
+  gap: 0.55rem;
+  background:
+    radial-gradient(circle at top right, rgba(var(--focus-glow), 0.3), transparent 55%),
+    linear-gradient(135deg, rgba(var(--focus-glow), 0.18), rgba(11, 13, 20, 0.86));
+}
+
+.focus__preview-surface::after {
+  content: "";
+  position: absolute;
+  inset: 1rem 1rem auto auto;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 999px;
+  background: rgba(var(--focus-glow), 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  transition: transform 0.35s ease, background-color 0.35s ease;
+}
+
+.focus__preview-surface span {
+  display: block;
+  height: 0.56rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  transition: width 0.35s ease, background-color 0.35s ease, transform 0.35s ease;
+}
+
+.focus__preview-surface span:nth-child(1) {
+  width: 72%;
+}
+
+.focus__preview-surface span:nth-child(2) {
+  width: 88%;
+}
+
+.focus__preview-surface span:nth-child(3) {
+  width: 54%;
+}
+
+.focus__preview-copy {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.focus__preview-copy span {
+  color: var(--focus-accent, var(--color-accent));
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.focus__preview-copy strong {
+  color: var(--color-ink);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.focus__card:hover .focus__preview,
+.focus__card:active .focus__preview {
+  transform: translateY(-3px);
+  border-color: rgba(var(--focus-glow), 0.28);
+}
+
+.focus__card:hover .focus__preview-surface::after,
+.focus__card:active .focus__preview-surface::after {
+  transform: scale(1.08);
+  background: rgba(var(--focus-glow), 0.42);
+}
+
+.focus__card:hover .focus__preview-surface span,
+.focus__card:active .focus__preview-surface span {
+  background: rgba(var(--focus-glow), 0.76);
+}
+
+.focus__card:hover .focus__preview-surface span:nth-child(1),
+.focus__card:active .focus__preview-surface span:nth-child(1) {
+  width: 86%;
+}
+
+.focus__card:hover .focus__preview-surface span:nth-child(2),
+.focus__card:active .focus__preview-surface span:nth-child(2) {
+  width: 94%;
+}
+
+.focus__card:hover .focus__preview-surface span:nth-child(3),
+.focus__card:active .focus__preview-surface span:nth-child(3) {
+  width: 72%;
+}
+
+.focus__card--accent .focus__preview {
+  background: rgba(37, 40, 55, 0.12);
+  border-color: rgba(37, 40, 55, 0.16);
+}
+
+.focus__card--accent .focus__preview-copy span,
+.focus__card--accent .focus__preview-copy strong {
+  color: #252837;
+}
+
 @media screen and (max-width: 1080px) {
   .focus__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -70,5 +215,15 @@
 @media screen and (max-width: 640px) {
   .focus__grid {
     grid-template-columns: 1fr;
+  }
+
+  .focus__preview {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (hover: none) {
+  .focus__preview-surface span {
+    background: rgba(var(--focus-glow), 0.64);
   }
 }

@@ -17,8 +17,8 @@ const heroFacts = [
     label: "University graduate with practical field and software exposure",
   },
   {
-    value: "4 lanes",
-    label: "Web, mobile, IoT, and Power & IT delivery",
+    value: "4 tracks",
+    label: "Web, mobile, systems integration, and Power & IT delivery",
   },
   {
     value: "Kenya",
@@ -64,10 +64,11 @@ const Header = () => {
           <h2 className="hero__role">Engineer who also builds software.</h2>
 
           <p className="hero__summary">
-            I am a Moi University graduate building practical solutions across web
-            platforms, mobile products, IoT systems, and Power &amp; IT environments.
-            My work sits at the intersection of engineering reliability and clean
-            digital execution.
+            I am an Electrical and Telecommunications Engineer who fuses engineering
+            discipline with software delivery, building practical solutions across
+            web platforms, mobile products, connected systems, and Power &amp; IT
+            environments. My work sits at the intersection of reliability, deployment
+            context, and clean digital execution.
           </p>
 
           <div className="hero__actions">
@@ -125,8 +126,8 @@ const Header = () => {
           <ul>
             <li>Web development for hosted products and company sites</li>
             <li>Mobile app work with source-ready project structure</li>
-            <li>IoT deployments for monitoring and field visibility</li>
-            <li>Power &amp; IT support spanning networking, VMware, and operations</li>
+            <li>Systems integration for monitoring, routing, and field visibility</li>
+            <li>Power &amp; IT (IoT) support spanning networking, VMware, and operations</li>
           </ul>
 
           <a className="hero__aside-link" href="#about">

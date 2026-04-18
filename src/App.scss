@@ -99,6 +99,59 @@
   font-weight: 700;
 }
 
+.app__return {
+  position: fixed;
+  right: clamp(1rem, 3vw, 2rem);
+  bottom: clamp(1rem, 3vw, 2rem);
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.05rem;
+  border-radius: 999px;
+  background: rgba(49, 53, 69, 0.92);
+  border: 1px solid rgba(242, 181, 61, 0.22);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(12px);
+  color: var(--color-ink);
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  transform: translateY(18px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.app__return svg {
+  color: var(--color-accent);
+  font-size: 1rem;
+}
+
+.app__return.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  animation: app-return-float 2.8s ease-in-out infinite;
+}
+
+.app__return:hover {
+  border-color: rgba(242, 181, 61, 0.38);
+  box-shadow: 0 20px 34px rgba(0, 0, 0, 0.22);
+}
+
+@keyframes app-return-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
 @media screen and (max-width: 640px) {
   .section-shell {
     width: min(1160px, calc(100% - 1.25rem));
@@ -106,5 +159,10 @@
 
   .app__section {
     padding: 4rem 0;
+  }
+
+  .app__return {
+    bottom: 1rem;
+    right: 1rem;
   }
 }

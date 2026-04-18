@@ -12,9 +12,11 @@ const projects = [
     label: "Hosted website",
     summary:
       "A creative portfolio experience with stronger typography, section rhythm, and a presentation style that goes beyond a standard template.",
-    stack: ["JavaScript", "Frontend UI", "Vercel"],
-    liveUrl: "https://david-zilla-creatives.vercel.app",
+    stack: ["JavaScript", "Frontend UI", "Netlify"],
+    liveUrl: "https://elegant-gumdrop-3fbdae.netlify.app/",
     sourceUrl: "https://github.com/DavisKiprotich/DavidZilla-Creatives",
+    previewLabel: "Live site preview",
+    previewCaption: "Creative storytelling and portfolio-led layout rhythm",
   },
   {
     title: "Netline Technologies",
@@ -26,6 +28,8 @@ const projects = [
     stack: ["HTML", "CSS", "Business site"],
     liveUrl: "https://netline-technologies.vercel.app",
     sourceUrl: "https://github.com/DavisKiprotich/Netline-technologies",
+    previewLabel: "Company site preview",
+    previewCaption: "Service-led structure for a technical business brand",
   },
   {
     title: "React Calculator",
@@ -37,6 +41,8 @@ const projects = [
     stack: ["React", "JavaScript", "Vercel"],
     liveUrl: "https://react-calculator-five-inky.vercel.app",
     sourceUrl: "https://github.com/DavisKiprotich/React-calculator",
+    previewLabel: "Live build preview",
+    previewCaption: "State handling and responsive interaction patterns",
   },
   {
     title: "Todo List Simplified",
@@ -48,6 +54,8 @@ const projects = [
     stack: ["React", "State management", "Vercel"],
     liveUrl: "https://todo-list-simplified.vercel.app",
     sourceUrl: "https://github.com/DavisKiprotich/Todo-list-simplified",
+    previewLabel: "Utility workflow",
+    previewCaption: "A clean task flow built around usability and speed",
   },
   {
     title: "Drum Machine",
@@ -59,6 +67,8 @@ const projects = [
     stack: ["JavaScript", "UI interaction", "Vercel"],
     liveUrl: "https://drum-machine-nine-rose.vercel.app",
     sourceUrl: "https://github.com/DavisKiprotich/Drum-Machine",
+    previewLabel: "Interaction preview",
+    previewCaption: "Event-driven controls with responsive feedback",
   },
   {
     title: "ZK Secure Shop KE",
@@ -69,8 +79,21 @@ const projects = [
       "An ecommerce website for security systems, structured to present products clearly and support a more business-ready storefront experience.",
     stack: ["Ecommerce", "Security systems", "Netlify"],
     liveUrl: "https://zksecureshopke.netlify.app/",
-    sourcePrivate: true,
-    note: "The live site is public. Source is not currently published in a public repository.",
+    sourceUrl: "https://github.com/DavisKiprotich/ZK-Secureshop",
+    previewLabel: "Hosted storefront",
+    previewCaption: "Security systems presented in a clearer buying flow",
+  },
+  {
+    title: "TeaDirect Kenya",
+    category: "web",
+    categoryLabel: "Web",
+    label: "Consumer platform",
+    summary:
+      "A tea commerce website that allows consumers to purchase tea leaves directly from their favorite factories through a clearer digital experience.",
+    stack: ["Ecommerce", "Tea marketplace", "Consumer web"],
+    sourceUrl: "https://github.com/DavisKiprotich/tea-direct-kenya",
+    previewLabel: "Source-backed build",
+    previewCaption: "A direct-to-consumer tea buying flow with factory choice",
   },
   {
     title: "Storease",
@@ -83,8 +106,10 @@ const projects = [
     playStoreUrl:
       "https://play.google.com/store/apps/details?id=com.daviskiprotich.storease",
     iosPending: true,
-    sourcePrivate: true,
-    note: "Play Store version is live. iOS link will be added once available.",
+    sourceUrl: "https://github.com/DavisKiprotich/Storease",
+    previewLabel: "Play Store preview",
+    previewCaption: "Mobile product delivery with a public store presence",
+    note: "Play Store version is live. Source code is public, and iOS will be added once available.",
   },
   {
     title: "Sermon Mate",
@@ -97,8 +122,10 @@ const projects = [
     playStoreUrl:
       "https://play.google.com/store/apps/details?id=com.kiprotich.sermonmate",
     iosPending: true,
-    sourcePrivate: true,
-    note: "Play Store version is live. iOS link will be added once available.",
+    sourceUrl: "https://github.com/DavisKiprotich/SermonMate",
+    previewLabel: "Play Store preview",
+    previewCaption: "Published mobile work structured for real users",
+    note: "Play Store version is live. Source code is public, and iOS will be added once available.",
   },
   {
     title: "BabyBite: Mealplanner for Babies",
@@ -111,8 +138,10 @@ const projects = [
     playStoreUrl:
       "https://play.google.com/store/apps/details?id=app.rork.babybite_guide",
     iosPending: true,
-    sourcePrivate: true,
-    note: "Play Store version is live. iOS link will be added once available.",
+    sourceUrl: "https://github.com/DavisKiprotich/Babybite",
+    previewLabel: "Play Store preview",
+    previewCaption: "Practical mobile planning experience for parents",
+    note: "Play Store version is live. Source code is public, and iOS will be added once available.",
   },
   {
     title: "FastFlow",
@@ -125,8 +154,10 @@ const projects = [
     playStoreUrl:
       "https://play.google.com/store/apps/details?id=com.kufungatracker.app",
     iosPending: true,
-    sourcePrivate: true,
-    note: "Play Store version is live. iOS link will be added once available.",
+    sourceUrl: "https://github.com/DavisKiprotich/Fasting-Tracker-App",
+    previewLabel: "Play Store preview",
+    previewCaption: "Health tracking around fasting, weight, and hydration",
+    note: "Play Store version is live. Source code is public, and iOS will be added once available.",
   },
   {
     title: "PdfImager",
@@ -140,30 +171,36 @@ const projects = [
       "https://play.google.com/store/apps/details?id=com.karoti.pdfimager",
     iosPending: true,
     sourceUrl: "https://github.com/DavisKiprotich/pdf-imager",
-    note: "Play Store version is live. iOS link will be added once available.",
+    previewLabel: "Play Store preview",
+    previewCaption: "Utility-first conversion workflow with public delivery",
+    note: "Play Store version is live. Source code is public, and iOS will be added once available.",
   },
   {
     title: "Site Monitoring Deployments",
-    category: "iot",
-    categoryLabel: "IoT",
+    category: "power-it",
+    categoryLabel: "Power & IT (IoT)",
     label: "Field deployment",
     summary:
       "Operational integration work around routers, fuel probes, and DC meters used to improve live site monitoring and visibility.",
     stack: ["Routers", "Fuel probes", "DC meters"],
     overviewUrl: "#experience",
     sourcePrivate: true,
+    previewLabel: "Overview preview",
+    previewCaption: "Live visibility across field devices and site conditions",
     note: "These were real operational deployments, so source and configurations remain private.",
   },
   {
     title: "Smart Power Integrations",
-    category: "iot",
-    categoryLabel: "IoT",
+    category: "power-it",
+    categoryLabel: "Power & IT (IoT)",
     label: "Connected systems",
     summary:
       "IoT-focused integration work for connected power systems, monitoring, and practical site-level visibility in live environments.",
     stack: ["Monitoring", "Power systems", "Integration"],
     overviewUrl: "#experience",
     sourcePrivate: true,
+    previewLabel: "Overview preview",
+    previewCaption: "Connected monitoring for power-facing engineering work",
     note: "Shown as engineering work rather than open-source code because the deployments were client-facing.",
   },
   {
@@ -176,6 +213,8 @@ const projects = [
     stack: ["CI/CD", "Automation", "DevOps"],
     overviewUrl: "https://github.com/DavisKiprotich/CI-CD-Pipeline",
     sourceUrl: "https://github.com/DavisKiprotich/CI-CD-Pipeline",
+    previewLabel: "Workflow preview",
+    previewCaption: "Repeatable delivery and automation-oriented engineering",
   },
   {
     title: "Power & IT Support Operations",
@@ -187,6 +226,8 @@ const projects = [
     stack: ["Networking", "VMware", "Support operations"],
     overviewUrl: "#experience",
     sourcePrivate: true,
+    previewLabel: "Operations preview",
+    previewCaption: "Infrastructure continuity, support, and uptime awareness",
     note: "Operational scripts, configs, and support artefacts are kept private for authenticity and client safety.",
   },
 ];
@@ -195,8 +236,7 @@ const filters = [
   { label: "All", value: "all" },
   { label: "Web", value: "web" },
   { label: "Mobile", value: "mobile" },
-  { label: "IoT", value: "iot" },
-  { label: "Power & IT", value: "power-it" },
+  { label: "Power & IT (IoT)", value: "power-it" },
 ];
 
 const Work = () => {
@@ -219,8 +259,8 @@ const Work = () => {
             <p className="section-copy">
               Web projects include hosted links and source code where public. Mobile
               projects now include Play Store links, with iOS links marked as coming
-              soon. IoT and Power &amp; IT work is shown honestly, with private deployment
-              notes where public code is not available.
+              soon. Power &amp; IT work, including IoT deployments, is shown honestly,
+              with private deployment notes where public code is not available.
             </p>
           </div>
 
@@ -252,6 +292,19 @@ const Work = () => {
               </div>
 
               <p className="project-card__summary">{project.summary}</p>
+
+              <div className="project-card__preview" aria-hidden="true">
+                <div className="project-card__preview-surface">
+                  <span />
+                  <span />
+                  <span />
+                </div>
+
+                <div className="project-card__preview-copy">
+                  <span>{project.previewLabel}</span>
+                  <strong>{project.previewCaption}</strong>
+                </div>
+              </div>
 
               <div className="pill-list project-card__stack">
                 {project.stack.map((item) => (

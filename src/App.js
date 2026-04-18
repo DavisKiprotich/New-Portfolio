@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Toaster } from "react-hot-toast";
+import { FiArrowUp } from "react-icons/fi";
 
 import { Navbar } from "./components";
 import {
@@ -16,6 +17,29 @@ import {
 import "./App.scss";
 
 const App = () => {
+  const [showReturnToHero, setShowReturnToHero] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowReturnToHero(window.scrollY > 540);
+    };
+
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleReturnToHero = () => {
+    document.getElementById("home")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <div className="app">
       <Navbar />
@@ -54,6 +78,16 @@ const App = () => {
           },
         }}
       />
+
+      <button
+        aria-label="Move back to the hero section"
+        className={`app__return ${showReturnToHero ? "is-visible" : ""}`}
+        onClick={handleReturnToHero}
+        type="button"
+      >
+        <FiArrowUp />
+        <span>Hero</span>
+      </button>
 
       <Footer />
     </div>
