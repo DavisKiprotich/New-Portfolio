@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1231" height="372" viewBox="0 0 1231 372" fill="none">
+  <rect width="1231" height="372" fill="#ffffff"/>
+  <g>
+    <path d="M19 20.5C19 18.567 21.067 17.345 22.733 18.291L46.917 32.018C48.61 32.979 48.61 35.421 46.917 36.382L22.733 50.109C21.067 51.055 19 49.833 19 47.9V20.5Z" fill="#34A853"/>
+    <path d="M22.6 18.198 35.238 30.836 19.726 46.348A2.33 2.33 0 0 1 19 44.798V19.748c0-.57.142-1.106.392-1.55.77-.003 2.32-.01 3.208 0Z" fill="#4285F4"/>
+    <path d="m35.238 30.836 11.679 6.629a1.87 1.87 0 0 1 0 3.272l-11.68 6.629-6.413-6.413 6.414-10.117Z" fill="#FBBC04"/>
+    <path d="m19.726 46.348 15.512-15.512 6.414 6.414-18.92 10.74c-.628.357-1.37.354-2.006.004.25-.444.391-.98.391-1.646Z" fill="#EA4335"/>
+  </g>
+  <text x="54" y="40" fill="#3C4043" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Google Play</text>
+  <text x="169" y="40" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="14">Games</text>
+  <text x="229" y="40" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600">Apps</text>
+  <text x="279" y="40" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="14">Kids</text>
+  <rect x="228" y="56" width="25" height="2" rx="1" fill="#01875F"/>
+
+  <text x="190" y="137" fill="#202124" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="500">FastFlow</text>
+  <text x="189" y="177" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500">Davis Kiprotich</text>
+
+  <text x="209" y="217" fill="#3C4043" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600">10+</text>
+  <text x="194" y="234" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="12">Downloads</text>
+  <line x1="262" y1="212" x2="262" y2="236" stroke="#DADCE0"/>
+  <rect x="305" y="205" width="14" height="14" rx="1" fill="none" stroke="#5F6368"/>
+  <text x="307.5" y="216.5" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700">3+</text>
+  <text x="278" y="235" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="12">Rated for 3+</text>
+  <circle cx="340" cy="232" r="3.5" fill="none" stroke="#5F6368" stroke-width="1"/>
+  <text x="338.5" y="234.8" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="5.5" font-weight="700">i</text>
+
+  <rect x="190" y="263" width="150" height="31" rx="6" fill="#01875F"/>
+  <text x="246" y="283" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Install</text>
+
+  <g transform="translate(358 269)">
+    <circle cx="8" cy="10" r="2.5" fill="#01875F"/>
+    <circle cx="17" cy="6" r="2.5" fill="#01875F"/>
+    <circle cx="17" cy="15" r="2.5" fill="#01875F"/>
+    <path d="M10.2 8.9 14.7 6.9M10.2 11.1l4.5 2" stroke="#01875F" stroke-width="1.7" stroke-linecap="round"/>
+  </g>
+  <text x="382" y="283" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500">Share</text>
+
+  <g transform="translate(448 265)">
+    <path d="M6 6h8v14l-4-2.4L6 20V6Z" fill="none" stroke="#01875F" stroke-width="1.7" stroke-linejoin="round"/>
+  </g>
+  <text x="470" y="283" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500">Add to wishlist</text>
+
+  <g transform="translate(189 310)">
+    <rect x="0.8" y="2.5" width="12.4" height="9" rx="1.8" fill="none" stroke="#5F6368" stroke-width="1.6"/>
+    <rect x="4.6" y="12.8" width="4.8" height="1.8" rx="0.9" fill="#5F6368"/>
+  </g>
+  <text x="215" y="323" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="14">This app is available for all of your devices</text>
+
+  <g filter="url(#shadow)">
+    <rect x="981" y="94" width="154" height="180" rx="32" fill="url(#card)"/>
+    <rect x="1004" y="117" width="108" height="134" rx="22" fill="#121640" fill-opacity=".42" stroke="rgba(255,255,255,.12)"/>
+    <circle cx="1058" cy="183" r="41" fill="url(#dialGlow)" stroke="#4AE2FF" stroke-opacity=".45" stroke-width="2"/>
+    <circle cx="1058" cy="183" r="34" fill="#171A52" stroke="#5EF2FF" stroke-opacity=".22"/>
+    <path d="M1058 149v10M1058 207v10M1024 183h10M1082 183h10M1035.3 160.3l7.1 7.1M1073.6 198.6l7.1 7.1M1080.7 160.3l-7.1 7.1M1042.4 198.6l-7.1 7.1" stroke="#7B84FF" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+    <path d="M1048 198c10-16 16-26 18-31 3 4 7 10 12 18" stroke="#79F0FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1058 183 1078 176" stroke="#79F0FF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M1058 183 1065 160" stroke="#A06CFF" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="1058" cy="183" r="5.5" fill="#D8F7FF"/>
+    <path d="M1087 160c6 5 10 12 12 20" stroke="#6DF3FF" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+    <text x="1051" y="228" fill="#3EE7FF" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" opacity=".22">F</text>
+  </g>
+
+  <defs>
+    <linearGradient id="card" x1="981" y1="94" x2="1135" y2="274" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090F43"/>
+      <stop offset=".52" stop-color="#10184E"/>
+      <stop offset="1" stop-color="#0C6074"/>
+    </linearGradient>
+    <radialGradient id="dialGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1066 171) rotate(132.064) scale(57.3989)">
+      <stop stop-color="#16356C"/>
+      <stop offset=".54" stop-color="#13184A"/>
+      <stop offset="1" stop-color="#11133B"/>
+    </radialGradient>
+    <filter id="shadow" x="955" y="89" width="218" height="243" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dx="6" dy="20"/>
+      <feGaussianBlur stdDeviation="16"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0207 0 0 0 0 0.0817 0 0 0 0 0.165 0 0 0 0.24 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+  </defs>
+</svg>

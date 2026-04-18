@@ -28,19 +28,19 @@ const entries = [
       "Oversaw networking, electro-mechanical installations, and uptime-focused work.",
       "Balanced delivery leadership with continued software growth.",
     ],
-    link: "https://netline-technologies.vercel.app/",
+    link: "https://www.netline.co.ke/",
   },
   {
     company: "Freelance",
-    role: "Web and Software Projects",
+    role: "Web and Mobile Software Projects",
     tag: "Independent work",
     accent: "muted",
     summary:
-      "I have built websites, product interfaces, and software concepts that sharpen both my engineering discipline and design sensitivity.",
+      "I build the software projects featured in this portfolio, from hosted business websites and ecommerce experiences to published mobile apps and utility-focused products.",
     highlights: [
-      "Built hosted web projects and portfolio experiences.",
-      "Worked on app concepts and product-facing user interfaces.",
-      "Used each build to improve visual quality and delivery speed.",
+      "Delivered web projects such as DavidZilla Creatives, ZK Secure Shop KE, TeaDirect Kenya, and the Netline website.",
+      "Built mobile apps including Storease, Sermon Mate, BabyBite, FastFlow, and PdfImager.",
+      "Used each build to strengthen UI quality, deployment discipline, and source-backed delivery.",
     ],
   },
   {

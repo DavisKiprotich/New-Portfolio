@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1229" height="379" viewBox="0 0 1229 379" fill="none">
+  <rect width="1229" height="379" fill="#ffffff"/>
+  <g>
+    <path d="M24 22.5C24 20.567 26.067 19.345 27.733 20.291L51.917 34.018C53.61 34.979 53.61 37.421 51.917 38.382L27.733 52.109C26.067 53.055 24 51.833 24 49.9V22.5Z" fill="#34A853"/>
+    <path d="M27.6 20.198 40.238 32.836 24.726 48.348A2.33 2.33 0 0 1 24 46.798V21.748c0-.57.142-1.106.392-1.55.77-.003 2.32-.01 3.208 0Z" fill="#4285F4"/>
+    <path d="m40.238 32.836 11.679 6.629a1.87 1.87 0 0 1 0 3.272l-11.68 6.629-6.413-6.413 6.414-10.117Z" fill="#FBBC04"/>
+    <path d="m24.726 48.348 15.512-15.512 6.414 6.414-18.92 10.74c-.628.357-1.37.354-2.006.004.25-.444.391-.98.391-1.646Z" fill="#EA4335"/>
+  </g>
+  <text x="58" y="46" fill="#3C4043" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Google Play</text>
+  <text x="173" y="46" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="14">Games</text>
+  <text x="238" y="46" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600">Apps</text>
+  <text x="290" y="46" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="14">Kids</text>
+  <rect x="239" y="63" width="24" height="2" rx="1" fill="#01875F"/>
+
+  <text x="118" y="147" fill="#202124" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="500">Storease</text>
+  <text x="151" y="190" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500">Davis Kiprotich</text>
+
+  <text x="182" y="231" fill="#3C4043" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600">0+</text>
+  <text x="158" y="248" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="12">Downloads</text>
+  <line x1="228" y1="226" x2="228" y2="249" stroke="#DADCE0"/>
+  <rect x="274" y="220" width="14" height="14" rx="1" fill="none" stroke="#5F6368"/>
+  <text x="276.5" y="231.5" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700">3+</text>
+  <text x="245" y="248" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="12">Rated for 3+</text>
+  <circle cx="309" cy="245" r="3.5" fill="none" stroke="#5F6368" stroke-width="1"/>
+  <text x="307.6" y="247.8" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="5.5" font-weight="700">i</text>
+
+  <rect x="151" y="282" width="159" height="35" rx="6" fill="#01875F"/>
+  <text x="210" y="304" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Install</text>
+
+  <g transform="translate(331 289)">
+    <circle cx="8" cy="10" r="2.5" fill="#01875F"/>
+    <circle cx="17" cy="6" r="2.5" fill="#01875F"/>
+    <circle cx="17" cy="15" r="2.5" fill="#01875F"/>
+    <path d="M10.2 8.9 14.7 6.9M10.2 11.1l4.5 2" stroke="#01875F" stroke-width="1.7" stroke-linecap="round"/>
+  </g>
+  <text x="355" y="304" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500">Share</text>
+
+  <g transform="translate(409 285)">
+    <path d="M6 6h8v14l-4-2.4L6 20V6Z" fill="none" stroke="#01875F" stroke-width="1.7" stroke-linejoin="round"/>
+  </g>
+  <text x="432" y="304" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500">Add to wishlist</text>
+
+  <g transform="translate(151 336)">
+    <rect x="0.8" y="2.5" width="12.4" height="9" rx="1.8" fill="none" stroke="#5F6368" stroke-width="1.6"/>
+    <rect x="4.6" y="12.8" width="4.8" height="1.8" rx="0.9" fill="#5F6368"/>
+  </g>
+  <text x="177" y="349" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="14">This app is available for all of your devices</text>
+
+  <rect x="994" y="104" width="197" height="193" rx="32" fill="#ffffff" stroke="#E5E7EB"/>
+  <rect x="1023" y="117" width="154" height="164" rx="28" fill="#1F8A8D"/>
+  <rect x="1023" y="117" width="154" height="164" rx="28" fill="url(#gloss)"/>
+  <path d="M1085 155 1107 142l48 28-24 14-46-29Z" fill="#ffffff" fill-opacity=".96"/>
+  <path d="M1060 170 1084 156v66l-29-18c-2.5-1.6-4-4.4-4-7.4v-34.2c0-4.3 4.6-7.1 8.3-4.4Z" fill="#ffffff" fill-opacity=".9"/>
+  <path d="m1154.6 170.6-23.6 13.8V251l27-17c3.2-2 5-5.4 5-9.1v-50.1c0-4.1-4.9-6.8-8.4-4.2Z" fill="#ffffff" fill-opacity=".88"/>
+
+  <defs>
+    <linearGradient id="gloss" x1="1023" y1="117" x2="1177" y2="281" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2DA2B8" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#0E6B89" stop-opacity=".08"/>
+    </linearGradient>
+  </defs>
+</svg>
