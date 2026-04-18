@@ -15,6 +15,7 @@ const projects = [
     stack: ["JavaScript", "Frontend UI", "Netlify"],
     liveUrl: "https://elegant-gumdrop-3fbdae.netlify.app/",
     sourceUrl: "https://github.com/DavisKiprotich/DavidZilla-Creatives",
+    previewImage: "/project-previews/davidzilla-creatives.png",
     previewLabel: "Live site preview",
     previewCaption: "Creative storytelling and portfolio-led layout rhythm",
   },
@@ -28,7 +29,8 @@ const projects = [
     stack: ["WordPress", "Business site", "Company website"],
     liveUrl: "https://www.netline.co.ke/",
     sourceUrl: "https://github.com/DavisKiprotich/Netline-technologies",
-    previewLabel: "Company site preview",
+    previewImage: "/project-previews/netline-technologies.png",
+    previewLabel: "Live site preview",
     previewCaption: "Service-led structure for a technical business brand",
   },
   {
@@ -41,6 +43,7 @@ const projects = [
     stack: ["React", "JavaScript", "Vercel"],
     liveUrl: "https://react-calculator-five-inky.vercel.app",
     sourceUrl: "https://github.com/DavisKiprotich/React-calculator",
+    previewImage: "/project-previews/react-calculator.png",
     previewLabel: "Live build preview",
     previewCaption: "State handling and responsive interaction patterns",
   },
@@ -54,7 +57,8 @@ const projects = [
     stack: ["React", "State management", "Vercel"],
     liveUrl: "https://todo-list-simplified.vercel.app",
     sourceUrl: "https://github.com/DavisKiprotich/Todo-list-simplified",
-    previewLabel: "Utility workflow",
+    previewImage: "/project-previews/todo-list-simplified.png",
+    previewLabel: "Live site preview",
     previewCaption: "A clean task flow built around usability and speed",
   },
   {
@@ -67,7 +71,8 @@ const projects = [
     stack: ["Ecommerce", "Security systems", "Netlify"],
     liveUrl: "https://zksecureshopke.netlify.app/",
     sourceUrl: "https://github.com/DavisKiprotich/ZK-Secureshop",
-    previewLabel: "Hosted storefront",
+    previewImage: "/project-previews/zk-secure-shop-ke.png",
+    previewLabel: "Live site preview",
     previewCaption: "Security systems presented in a clearer buying flow",
   },
   {
@@ -80,7 +85,8 @@ const projects = [
     stack: ["Ecommerce", "Tea marketplace", "Consumer web"],
     liveUrl: "https://tea-direct-kenya.netlify.app/",
     sourceUrl: "https://github.com/DavisKiprotich/tea-direct-kenya",
-    previewLabel: "Source-backed build",
+    previewImage: "/project-previews/tea-direct-kenya.png",
+    previewLabel: "Live site preview",
     previewCaption: "A direct-to-consumer tea buying flow with factory choice",
   },
   {
@@ -279,11 +285,17 @@ const Work = () => {
 
               {project.showPreview === false ? null : (
                 <div className="project-card__preview" aria-hidden="true">
-                  <div className="project-card__preview-surface">
-                    <span />
-                    <span />
-                    <span />
-                  </div>
+                  {project.previewImage ? (
+                    <div className="project-card__preview-frame">
+                      <img alt="" src={project.previewImage} />
+                    </div>
+                  ) : (
+                    <div className="project-card__preview-surface">
+                      <span />
+                      <span />
+                      <span />
+                    </div>
+                  )}
 
                   <div className="project-card__preview-copy">
                     <span>{project.previewLabel}</span>
