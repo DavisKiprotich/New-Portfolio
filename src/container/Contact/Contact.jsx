@@ -16,7 +16,7 @@ const socialLinks = [
   {
     href: "https://x.com/werigan_non/",
     icon: <FaXTwitter />,
-    label: "X",
+    label: "X / Twitter",
   },
   {
     href: "https://github.com/DavisKiprotich/",
@@ -46,7 +46,15 @@ const Contact = () => {
       toast.success("Message sent. I will get back to you soon.");
       event.target.reset();
     } catch (error) {
-      toast.error(error?.text || "Something went wrong. Please email me directly.");
+      const errorText = error?.text || "";
+
+      if (errorText.includes("Invalid grant") || errorText.includes("Gmail_API")) {
+        toast.error(
+          "Email delivery is temporarily unavailable. Please email me directly while Gmail is reconnected."
+        );
+      } else {
+        toast.error("Something went wrong. Please email me directly.");
+      }
     } finally {
       setIsSending(false);
     }

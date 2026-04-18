@@ -295,13 +295,27 @@
   font-size: 0.9rem;
   font-weight: 800;
   transition: transform 0.25s ease, background-color 0.25s ease,
-    border-color 0.25s ease, color 0.25s ease;
+    border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.project-card__link:hover {
+.project-card__link--button {
+  cursor: pointer;
+  font-family: inherit;
+  appearance: none;
+}
+
+.project-card__link:hover,
+.project-card__link:focus-visible {
   transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(var(--project-glow), 0.12);
+  border-color: rgba(255, 202, 99, 0.28);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+  color: var(--color-accent-strong);
+}
+
+.project-card__link--button.is-active {
+  background: rgba(var(--project-glow), 0.14);
+  border-color: rgba(var(--project-glow), 0.28);
   color: var(--project-accent);
 }
 
@@ -309,8 +323,55 @@
   color: var(--color-muted);
 }
 
-.project-card__link--muted:hover {
+.project-card__link--muted:hover,
+.project-card__link--muted:focus-visible {
   color: var(--color-muted);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--color-border);
+  box-shadow: none;
+  transform: none;
+}
+
+.project-card__case-study {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 22px;
+  background: rgba(15, 18, 27, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-card__case-kicker {
+  color: var(--project-accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-card__case-row {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.project-card__case-row h4 {
+  color: var(--color-ink);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.project-card__case-row p,
+.project-card__case-row li {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.project-card__case-row ul {
+  display: grid;
+  gap: 0.45rem;
+  padding-left: 1rem;
 }
 
 .project-card__note {

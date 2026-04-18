@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaApple, FaGithub, FaGooglePlay } from "react-icons/fa";
-import { FiArrowUpRight, FiLock } from "react-icons/fi";
+import { FiArrowUpRight, FiChevronDown, FiChevronUp, FiLock } from "react-icons/fi";
 
 import "./Work.scss";
 
@@ -182,9 +182,21 @@ const projects = [
     summary:
       "Operational integration work around routers, fuel probes, and DC meters used to improve live site monitoring and visibility.",
     stack: ["Routers", "Fuel probes", "DC meters"],
-    overviewUrl: "#experience",
     sourcePrivate: true,
     showPreview: false,
+    caseStudy: {
+      challenge:
+        "Remote sites needed faster visibility across fuel, power, and operating status without relying only on physical follow-up.",
+      role:
+        "Handled deployment support around routers, fuel probes, DC meters, and the field setup needed to make live monitoring practical.",
+      evidence: [
+        "Routers configured to support remote monitoring links.",
+        "Fuel probe and DC meter integrations applied in live environments.",
+        "Operational monitoring visibility tied back to real site status and response.",
+      ],
+      outcome:
+        "Improved remote visibility and faster issue follow-up for operational teams, while keeping sensitive client configurations private.",
+    },
     note: "These were real operational deployments, so source and configurations remain private.",
   },
   {
@@ -195,9 +207,21 @@ const projects = [
     summary:
       "IoT-focused integration work for connected power systems, monitoring, and practical site-level visibility in live environments.",
     stack: ["Monitoring", "Power systems", "Integration"],
-    overviewUrl: "#experience",
     sourcePrivate: true,
     showPreview: false,
+    caseStudy: {
+      challenge:
+        "Power-facing environments needed clearer connected monitoring so issues could be surfaced earlier and site blind spots reduced.",
+      role:
+        "Integrated monitoring components and supported the communication path between field devices and reporting visibility.",
+      evidence: [
+        "Connected monitoring points across power-system environments.",
+        "Device-level visibility for live engineering deployments.",
+        "Client-facing integration work documented as private operational delivery.",
+      ],
+      outcome:
+        "Enabled better monitoring around power conditions and stronger site-level visibility in practical operating environments.",
+    },
     note: "Shown as engineering work rather than open-source code because the deployments were client-facing.",
   },
   {
@@ -208,9 +232,21 @@ const projects = [
     summary:
       "Hands-on CI/CD work that reflects the IT side of the portfolio and the move toward repeatable delivery practices.",
     stack: ["CI/CD", "Automation", "DevOps"],
-    overviewUrl: "https://github.com/DavisKiprotich/CI-CD-Pipeline",
     sourceUrl: "https://github.com/DavisKiprotich/CI-CD-Pipeline",
     showPreview: false,
+    caseStudy: {
+      challenge:
+        "Software delivery needed a more repeatable path from code changes to build and deployment.",
+      role:
+        "Built and tested a CI/CD workflow to strengthen automation, release consistency, and delivery discipline.",
+      evidence: [
+        "Pipeline configuration and automation workflow kept in source control.",
+        "Hands-on Jenkins and CI practice reflected in the repository.",
+        "Delivery steps structured for repeatable builds and checks.",
+      ],
+      outcome:
+        "Improved confidence in repeatable software delivery and strengthened the IT side of the portfolio.",
+    },
   },
   {
     title: "Power & IT Support Operations",
@@ -220,9 +256,21 @@ const projects = [
     summary:
       "Work spanning network support, VMware, system continuity, and power-facing environments where uptime and response matter.",
     stack: ["Networking", "VMware", "Support operations"],
-    overviewUrl: "#experience",
     sourcePrivate: true,
     showPreview: false,
+    caseStudy: {
+      challenge:
+        "Operational environments required dependable support across networking, VMware, and continuity-sensitive systems.",
+      role:
+        "Supported infrastructure continuity, troubleshooting, and day-to-day technical operations in live environments.",
+      evidence: [
+        "Networking and VMware support within operational contexts.",
+        "Continuity-focused work around power-facing systems and uptime.",
+        "Client-sensitive artefacts and configurations intentionally kept private.",
+      ],
+      outcome:
+        "Helped sustain uptime, faster issue response, and more stable day-to-day operations in engineering environments.",
+    },
     note: "Operational scripts, configs, and support artefacts are kept private for authenticity and client safety.",
   },
 ];
@@ -236,11 +284,16 @@ const filters = [
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("all");
+  const [expandedCaseStudy, setExpandedCaseStudy] = useState(null);
 
   const filteredProjects =
     activeFilter === "all"
       ? projects
       : projects.filter((project) => project.category === activeFilter);
+
+  const toggleCaseStudy = (title) => {
+    setExpandedCaseStudy((current) => (current === title ? null : title));
+  };
 
   return (
     <section className="projects app__section" id="work">
@@ -276,7 +329,10 @@ const Work = () => {
         </div>
 
         <div className="projects__grid">
-          {filteredProjects.map((project) => (
+          {filteredProjects.map((project) => {
+            const isCaseStudyOpen = expandedCaseStudy === project.title;
+
+            return (
             <article className={`project-card project-card--${project.category}`} key={project.title}>
               <div className="project-card__head">
                 <div>
@@ -337,6 +393,19 @@ const Work = () => {
                   </a>
                 ) : null}
 
+                {project.caseStudy ? (
+                  <button
+                    className={`project-card__link project-card__link--button ${
+                      isCaseStudyOpen ? "is-active" : ""
+                    }`}
+                    onClick={() => toggleCaseStudy(project.title)}
+                    type="button"
+                  >
+                    {isCaseStudyOpen ? <FiChevronUp /> : <FiChevronDown />}
+                    Overview
+                  </button>
+                ) : null}
+
                 {project.overviewUrl ? (
                   <a
                     className="project-card__link"
@@ -371,9 +440,40 @@ const Work = () => {
                 ) : null}
               </div>
 
+              {project.caseStudy && isCaseStudyOpen ? (
+                <div className="project-card__case-study">
+                  <span className="project-card__case-kicker">Case study overview</span>
+
+                  <div className="project-card__case-row">
+                    <h4>Challenge</h4>
+                    <p>{project.caseStudy.challenge}</p>
+                  </div>
+
+                  <div className="project-card__case-row">
+                    <h4>My role</h4>
+                    <p>{project.caseStudy.role}</p>
+                  </div>
+
+                  <div className="project-card__case-row">
+                    <h4>Proof</h4>
+                    <ul>
+                      {project.caseStudy.evidence.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="project-card__case-row">
+                    <h4>Outcome</h4>
+                    <p>{project.caseStudy.outcome}</p>
+                  </div>
+                </div>
+              ) : null}
+
               {project.note ? <p className="project-card__note">{project.note}</p> : null}
             </article>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

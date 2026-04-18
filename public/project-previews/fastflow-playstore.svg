@@ -1,82 +1,208 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1231" height="372" viewBox="0 0 1231 372" fill="none">
-  <rect width="1231" height="372" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1323" height="531" viewBox="0 0 1323 531" fill="none">
+  <rect width="1323" height="531" fill="#ffffff"/>
+
   <g>
-    <path d="M19 20.5C19 18.567 21.067 17.345 22.733 18.291L46.917 32.018C48.61 32.979 48.61 35.421 46.917 36.382L22.733 50.109C21.067 51.055 19 49.833 19 47.9V20.5Z" fill="#34A853"/>
-    <path d="M22.6 18.198 35.238 30.836 19.726 46.348A2.33 2.33 0 0 1 19 44.798V19.748c0-.57.142-1.106.392-1.55.77-.003 2.32-.01 3.208 0Z" fill="#4285F4"/>
-    <path d="m35.238 30.836 11.679 6.629a1.87 1.87 0 0 1 0 3.272l-11.68 6.629-6.413-6.413 6.414-10.117Z" fill="#FBBC04"/>
-    <path d="m19.726 46.348 15.512-15.512 6.414 6.414-18.92 10.74c-.628.357-1.37.354-2.006.004.25-.444.391-.98.391-1.646Z" fill="#EA4335"/>
+    <path d="M21 20.5C21 18.567 23.067 17.345 24.733 18.291L48.917 32.018C50.61 32.979 50.61 35.421 48.917 36.382L24.733 50.109C23.067 51.055 21 49.833 21 47.9V20.5Z" fill="#34A853"/>
+    <path d="M24.6 18.198 37.238 30.836 21.726 46.348A2.33 2.33 0 0 1 21 44.798V19.748c0-.57.142-1.106.392-1.55.77-.003 2.32-.01 3.208 0Z" fill="#4285F4"/>
+    <path d="m37.238 30.836 11.679 6.629a1.87 1.87 0 0 1 0 3.272l-11.68 6.629-6.413-6.413 6.414-10.117Z" fill="#FBBC04"/>
+    <path d="m21.726 46.348 15.512-15.512 6.414 6.414-18.92 10.74c-.628.357-1.37.354-2.006.004.25-.444.391-.98.391-1.646Z" fill="#EA4335"/>
   </g>
-  <text x="54" y="40" fill="#3C4043" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Google Play</text>
-  <text x="169" y="40" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="14">Games</text>
-  <text x="229" y="40" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600">Apps</text>
-  <text x="279" y="40" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="14">Kids</text>
-  <rect x="228" y="56" width="25" height="2" rx="1" fill="#01875F"/>
+  <text x="58" y="39" fill="#3C4043" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600">Google Play</text>
+  <text x="173" y="39" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="14">Games</text>
+  <text x="228" y="39" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600">Apps</text>
+  <text x="278" y="39" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="14">Kids</text>
+  <rect x="228" y="55" width="24" height="2.5" rx="1.25" fill="#01875F"/>
 
-  <text x="190" y="137" fill="#202124" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="500">FastFlow</text>
-  <text x="189" y="177" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500">Davis Kiprotich</text>
+  <text x="188" y="138" fill="#202124" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="500">FastFlow</text>
+  <text x="188" y="171" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500">Davis Kiprotich</text>
 
-  <text x="209" y="217" fill="#3C4043" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600">10+</text>
-  <text x="194" y="234" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="12">Downloads</text>
-  <line x1="262" y1="212" x2="262" y2="236" stroke="#DADCE0"/>
-  <rect x="305" y="205" width="14" height="14" rx="1" fill="none" stroke="#5F6368"/>
-  <text x="307.5" y="216.5" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700">3+</text>
-  <text x="278" y="235" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="12">Rated for 3+</text>
-  <circle cx="340" cy="232" r="3.5" fill="none" stroke="#5F6368" stroke-width="1"/>
-  <text x="338.5" y="234.8" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="5.5" font-weight="700">i</text>
+  <text x="209" y="211" fill="#3C4043" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600">10+</text>
+  <text x="194" y="228" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="12">Downloads</text>
+  <line x1="263" y1="206" x2="263" y2="231" stroke="#DADCE0"/>
+  <rect x="304" y="199" width="14" height="14" rx="1" fill="none" stroke="#5F6368"/>
+  <text x="306.5" y="210.5" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700">3+</text>
+  <text x="276" y="229" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="12">Rated for 3+</text>
+  <circle cx="339" cy="226" r="3.5" fill="none" stroke="#5F6368" stroke-width="1"/>
+  <text x="337.8" y="228.8" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="5.5" font-weight="700">i</text>
 
-  <rect x="190" y="263" width="150" height="31" rx="6" fill="#01875F"/>
-  <text x="246" y="283" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Install</text>
+  <rect x="189" y="263" width="150" height="32" rx="6" fill="#01875F"/>
+  <text x="246" y="284" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Install</text>
 
-  <g transform="translate(358 269)">
+  <g transform="translate(357 268)">
     <circle cx="8" cy="10" r="2.5" fill="#01875F"/>
     <circle cx="17" cy="6" r="2.5" fill="#01875F"/>
     <circle cx="17" cy="15" r="2.5" fill="#01875F"/>
     <path d="M10.2 8.9 14.7 6.9M10.2 11.1l4.5 2" stroke="#01875F" stroke-width="1.7" stroke-linecap="round"/>
   </g>
-  <text x="382" y="283" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500">Share</text>
+  <text x="382" y="284" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500">Share</text>
 
-  <g transform="translate(448 265)">
+  <g transform="translate(431 264)">
     <path d="M6 6h8v14l-4-2.4L6 20V6Z" fill="none" stroke="#01875F" stroke-width="1.7" stroke-linejoin="round"/>
   </g>
-  <text x="470" y="283" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500">Add to wishlist</text>
+  <text x="453" y="284" fill="#01875F" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="500">Add to wishlist</text>
 
-  <g transform="translate(189 310)">
+  <g transform="translate(190 309)">
     <rect x="0.8" y="2.5" width="12.4" height="9" rx="1.8" fill="none" stroke="#5F6368" stroke-width="1.6"/>
     <rect x="4.6" y="12.8" width="4.8" height="1.8" rx="0.9" fill="#5F6368"/>
   </g>
-  <text x="215" y="323" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="14">This app is available for all of your devices</text>
+  <text x="214" y="323" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="14">This app is available for all of your devices</text>
 
-  <g filter="url(#shadow)">
-    <rect x="981" y="94" width="154" height="180" rx="32" fill="url(#card)"/>
-    <rect x="1004" y="117" width="108" height="134" rx="22" fill="#121640" fill-opacity=".42" stroke="rgba(255,255,255,.12)"/>
-    <circle cx="1058" cy="183" r="41" fill="url(#dialGlow)" stroke="#4AE2FF" stroke-opacity=".45" stroke-width="2"/>
-    <circle cx="1058" cy="183" r="34" fill="#171A52" stroke="#5EF2FF" stroke-opacity=".22"/>
-    <path d="M1058 149v10M1058 207v10M1024 183h10M1082 183h10M1035.3 160.3l7.1 7.1M1073.6 198.6l7.1 7.1M1080.7 160.3l-7.1 7.1M1042.4 198.6l-7.1 7.1" stroke="#7B84FF" stroke-width="2" stroke-linecap="round" opacity=".8"/>
-    <path d="M1048 198c10-16 16-26 18-31 3 4 7 10 12 18" stroke="#79F0FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M1058 183 1078 176" stroke="#79F0FF" stroke-width="4" stroke-linecap="round"/>
-    <path d="M1058 183 1065 160" stroke="#A06CFF" stroke-width="4" stroke-linecap="round"/>
-    <circle cx="1058" cy="183" r="5.5" fill="#D8F7FF"/>
-    <path d="M1087 160c6 5 10 12 12 20" stroke="#6DF3FF" stroke-width="3" stroke-linecap="round" opacity=".8"/>
-    <text x="1051" y="228" fill="#3EE7FF" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" opacity=".22">F</text>
+  <g filter="url(#appIconShadow)">
+    <rect x="980" y="93" width="184" height="180" rx="34" fill="url(#iconShell)"/>
+    <rect x="1004" y="117" width="136" height="132" rx="28" fill="#11133F"/>
+    <rect x="1004" y="117" width="136" height="132" rx="28" fill="url(#iconGlow)" fill-opacity=".88"/>
+    <circle cx="1072" cy="183" r="46" fill="url(#dial)"/>
+    <circle cx="1072" cy="183" r="38" fill="#14184D" stroke="#4FE9FF" stroke-opacity=".24"/>
+    <path d="M1072 145v10M1072 211v10M1034 183h10M1100 183h10M1045 156l7 7M1092 203l7 7M1099 156l-7 7M1052 203l-7 7" stroke="#7B84FF" stroke-width="2" stroke-linecap="round" opacity=".78"/>
+    <path d="M1060 198c8-13 13-22 15-26 3 4 7 9 11 15" stroke="#79F0FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1072 183 1091 176" stroke="#79F0FF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M1072 183 1078 160" stroke="#A06CFF" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="1072" cy="183" r="5.5" fill="#D8F7FF"/>
+    <path d="M1093 150c8 6 13 14 14 24" stroke="#86FFF7" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+    <text x="1067" y="225" fill="#52E7FF" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" opacity=".2">F</text>
   </g>
 
+  <g transform="translate(188 309)">
+    <circle cx="1" cy="112" r="20.5" fill="#ffffff" stroke="#DADCE0"/>
+    <path d="m5 103-9 9 9 9" stroke="#5F6368" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(246 309)">
+    <rect width="136" height="236" rx="8" fill="#F5F7FB"/>
+    <rect x="12" width="124" height="236" rx="8" fill="#1A203F"/>
+    <rect x="43" y="13" width="62" height="210" rx="18" fill="#0F1430" stroke="#27305C"/>
+    <rect x="67" y="17" width="14" height="4" rx="2" fill="#7B88C4"/>
+    <circle cx="74" cy="72" r="36" fill="url(#phoneRing)" stroke="#2B365F"/>
+    <circle cx="74" cy="72" r="24" fill="#11152D" stroke="#2B365F"/>
+    <text x="55" y="79" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">00</text>
+    <text x="53" y="95" fill="#8FB9FF" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700">Start Fasting</text>
+    <rect x="48" y="122" width="52" height="14" rx="7" fill="#6AE2E8"/>
+    <text x="56" y="132" fill="#122041" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700">Start Fasting</text>
+    <rect x="53" y="177" width="43" height="18" rx="6" fill="#151A31" stroke="#313B69"/>
+    <circle cx="74" cy="214" r="3.5" fill="#52618D"/>
+  </g>
+
+  <g transform="translate(393 309)">
+    <rect width="138" height="236" rx="8" fill="#F5F7FB"/>
+    <rect x="12" width="126" height="236" rx="8" fill="#1A203F"/>
+    <rect x="33" y="13" width="85" height="210" rx="18" fill="#11152D" stroke="#27305C"/>
+    <rect x="60" y="17" width="31" height="4" rx="2" fill="#7B88C4"/>
+    <rect x="41" y="31" width="69" height="16" rx="6" fill="#182448"/>
+    <text x="48" y="42" fill="#D7E2FF" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700">Weight Tracker</text>
+    <rect x="94" y="35" width="16" height="8" rx="3" fill="#2DD4E2"/>
+    <text x="99" y="41" fill="#11233F" font-family="Arial, Helvetica, sans-serif" font-size="5.5" font-weight="700">Pro</text>
+    <rect x="41" y="58" width="69" height="91" rx="8" fill="#141933" stroke="#2A3360"/>
+    <path d="M54 79h43M54 98h43M54 117h43" stroke="#495888" stroke-width="1.5"/>
+    <g fill="#EE7F6A">
+      <circle cx="51" cy="70" r="2.5"/>
+    </g>
+    <g fill="#6CE3E9">
+      <circle cx="51" cy="89" r="2.5"/>
+    </g>
+    <g fill="#F2D46E">
+      <circle cx="51" cy="108" r="2.5"/>
+    </g>
+    <rect x="41" y="157" width="69" height="58" rx="8" fill="#141933" stroke="#2A3360"/>
+    <path d="M48 176h55M48 188h55M48 200h55" stroke="#495888" stroke-width="1.3"/>
+  </g>
+
+  <g transform="translate(543 309)">
+    <rect width="141" height="236" rx="8" fill="#F5F7FB"/>
+    <rect x="12" width="129" height="236" rx="8" fill="#1A203F"/>
+    <rect x="36" y="13" width="82" height="210" rx="18" fill="#11152D" stroke="#27305C"/>
+    <rect x="53" y="31" width="47" height="47" rx="23.5" fill="#101A35" stroke="#32416B"/>
+    <circle cx="76.5" cy="54.5" r="14" stroke="#354B8A" stroke-width="3"/>
+    <text x="72" y="58" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">0</text>
+    <rect x="44" y="87" width="66" height="14" rx="7" fill="#192241"/>
+    <rect x="72" y="91" width="30" height="6" rx="3" fill="#2DD4E2"/>
+    <rect x="50" y="107" width="55" height="12" rx="6" fill="#182448"/>
+    <text x="66" y="115" fill="#D7E2FF" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="700">Add Goal</text>
+    <rect x="43" y="137" width="29" height="44" rx="6" fill="#131B35" stroke="#2D3968"/>
+    <rect x="46" y="140" width="23" height="3" rx="1.5" fill="#2DD4E2"/>
+    <text x="52" y="162" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700">0m</text>
+    <rect x="81" y="137" width="29" height="44" rx="6" fill="#131B35" stroke="#2D3968"/>
+    <rect x="84" y="140" width="23" height="3" rx="1.5" fill="#F2D46E"/>
+    <text x="90" y="162" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700">0h</text>
+  </g>
+
+  <g transform="translate(696 309)">
+    <rect width="139" height="236" rx="8" fill="#F5F7FB"/>
+    <rect x="12" width="127" height="236" rx="8" fill="#1A203F"/>
+    <rect x="33" y="13" width="84" height="210" rx="18" fill="#11152D" stroke="#27305C"/>
+    <rect x="46" y="32" width="58" height="22" rx="6" fill="#151D37" stroke="#2B3765"/>
+    <text x="61" y="46" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700">Select Language</text>
+    <rect x="43" y="63" width="64" height="112" rx="7" fill="#141933" stroke="#2A3360"/>
+    <g fill="#D94B4B">
+      <rect x="51" y="78" width="8" height="6" rx="1"/>
+    </g>
+    <g fill="#EEB34B">
+      <rect x="51" y="98" width="8" height="6" rx="1"/>
+    </g>
+    <g fill="#4BD96D">
+      <rect x="51" y="118" width="8" height="6" rx="1"/>
+    </g>
+    <g fill="#4B8FD9">
+      <rect x="51" y="138" width="8" height="6" rx="1"/>
+    </g>
+    <path d="M63 81h34M63 101h34M63 121h34M63 141h34" stroke="#7F8AB8" stroke-width="1.5"/>
+    <rect x="50" y="188" width="50" height="14" rx="7" fill="#1FB8D3"/>
+    <text x="67" y="197.5" fill="#122041" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="700">Close</text>
+  </g>
+
+  <text x="888" y="340" fill="#3C4043" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600">App support</text>
+  <path d="m1001 326 6 6 6-6" stroke="#5F6368" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="885" y="396" fill="#202124" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="500">Similar apps</text>
+  <path d="m996 384 6 6-6 6" stroke="#5F6368" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(885 419)">
+    <rect width="46" height="46" rx="10" fill="url(#ghostCard)"/>
+    <circle cx="23" cy="22" r="10" fill="#ffffff" opacity=".9"/>
+    <path d="M18 23c1 2 3 4 5 4s4-2 5-4" stroke="#6B57F2" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="20" cy="20" r="1.5" fill="#6B57F2"/>
+    <circle cx="26" cy="20" r="1.5" fill="#6B57F2"/>
+  </g>
+  <text x="946" y="433" fill="#202124" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="500">Solo Safety: Are You ok?</text>
+  <text x="946" y="447" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="12">Novo Studio</text>
+
+  <g transform="translate(885 491)">
+    <rect width="46" height="46" rx="10" fill="#F6E7FF"/>
+    <circle cx="23" cy="23" r="12" fill="#7D56C4"/>
+    <path d="M19 26c3-6 7-8 10-8-1 5-3 8-6 10" stroke="#F7E9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="946" y="504" fill="#202124" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="500">Sapiens Club: Daily Learning</text>
+  <text x="946" y="518" fill="#5F6368" font-family="Arial, Helvetica, sans-serif" font-size="12">Sapiens Club</text>
+
   <defs>
-    <linearGradient id="card" x1="981" y1="94" x2="1135" y2="274" gradientUnits="userSpaceOnUse">
+    <linearGradient id="iconShell" x1="980" y1="93" x2="1164" y2="273" gradientUnits="userSpaceOnUse">
       <stop stop-color="#090F43"/>
       <stop offset=".52" stop-color="#10184E"/>
       <stop offset="1" stop-color="#0C6074"/>
     </linearGradient>
-    <radialGradient id="dialGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1066 171) rotate(132.064) scale(57.3989)">
-      <stop stop-color="#16356C"/>
-      <stop offset=".54" stop-color="#13184A"/>
-      <stop offset="1" stop-color="#11133B"/>
+    <radialGradient id="iconGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1114 122) rotate(130.315) scale(153.196 137.255)">
+      <stop stop-color="#1B6F74"/>
+      <stop offset=".55" stop-color="#111647" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#111647" stop-opacity="0"/>
     </radialGradient>
-    <filter id="shadow" x="955" y="89" width="218" height="243" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <radialGradient id="dial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1080 174) rotate(133.742) scale(56.6546)">
+      <stop stop-color="#173B71"/>
+      <stop offset=".55" stop-color="#151A52"/>
+      <stop offset="1" stop-color="#10133A"/>
+    </radialGradient>
+    <radialGradient id="phoneRing" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(86 56) rotate(130.601) scale(57.8013)">
+      <stop stop-color="#1A5479"/>
+      <stop offset=".5" stop-color="#161B49"/>
+      <stop offset="1" stop-color="#111531"/>
+    </radialGradient>
+    <linearGradient id="ghostCard" x1="0" y1="0" x2="46" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A900FF"/>
+      <stop offset="1" stop-color="#5D6BFF"/>
+    </linearGradient>
+    <filter id="appIconShadow" x="950" y="84" width="250" height="228" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset dx="6" dy="20"/>
-      <feGaussianBlur stdDeviation="16"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0.0207 0 0 0 0 0.0817 0 0 0 0 0.165 0 0 0 0.24 0"/>
+      <feOffset dx="4" dy="20"/>
+      <feGaussianBlur stdDeviation="17"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.024 0 0 0 0 0.079 0 0 0 0 0.17 0 0 0 0.27 0"/>
       <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
     </filter>

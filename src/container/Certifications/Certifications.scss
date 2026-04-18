@@ -58,6 +58,15 @@
   color: var(--color-ink);
   font-size: 0.88rem;
   font-weight: 800;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.cert-card__link:hover {
+  color: var(--color-accent-strong);
+  border-color: rgba(255, 202, 99, 0.28);
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-1px);
 }
 
 .cert-card__link--muted {
