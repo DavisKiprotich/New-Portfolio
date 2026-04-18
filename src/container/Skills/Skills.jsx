@@ -9,8 +9,6 @@ const focusAreas = [
     title: "Web Development",
     description:
       "Responsive websites, company platforms, dashboards, and portfolio experiences with modern frontend tooling.",
-    previewLabel: "Hosted builds",
-    previewCaption: "Responsive launches with stronger visual storytelling",
     accentColor: "#f2b53d",
     glow: "242, 181, 61",
     accent: true,
@@ -19,9 +17,7 @@ const focusAreas = [
     icon: <FiSmartphone />,
     title: "Mobile Development",
     description:
-      "Mobile application work structured for real product delivery, store-ready publishing, and source-backed portfolio presentation.",
-    previewLabel: "Store-ready apps",
-    previewCaption: "Play Store delivery with product-first thinking",
+      "Mobile application work with React Native and Expo, structured for real product delivery, store-ready publishing, and source-backed portfolio presentation.",
     accentColor: "#8cb5ff",
     glow: "140, 181, 255",
   },
@@ -30,8 +26,6 @@ const focusAreas = [
     title: "Systems Integration",
     description:
       "Field integrations involving routers, fuel probes, DC meters, and connected monitoring setups for operational visibility.",
-    previewLabel: "Connected systems",
-    previewCaption: "Monitoring flows, device links, and operational visibility",
     accentColor: "#79d6c0",
     glow: "121, 214, 192",
   },
@@ -40,8 +34,6 @@ const focusAreas = [
     title: "Power & IT (IoT)",
     description:
       "Networking, VMware, cloud exposure, CI/CD workflows, and technical support shaped by infrastructure and power environments.",
-    previewLabel: "Operational support",
-    previewCaption: "Infrastructure, uptime, and deployment context",
     accentColor: "#f3c46a",
     glow: "243, 196, 106",
   },
@@ -77,19 +69,6 @@ const Skills = () => {
                 <span className="focus__icon">{item.icon}</span>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
-              </div>
-
-              <div className="focus__preview" aria-hidden="true">
-                <div className="focus__preview-surface">
-                  <span />
-                  <span />
-                  <span />
-                </div>
-
-                <div className="focus__preview-copy">
-                  <span>{item.previewLabel}</span>
-                  <strong>{item.previewCaption}</strong>
-                </div>
               </div>
             </article>
           ))}

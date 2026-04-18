@@ -91,6 +91,7 @@ const projects = [
     summary:
       "A tea commerce website that allows consumers to purchase tea leaves directly from their favorite factories through a clearer digital experience.",
     stack: ["Ecommerce", "Tea marketplace", "Consumer web"],
+    liveUrl: "https://tea-direct-kenya.netlify.app/",
     sourceUrl: "https://github.com/DavisKiprotich/tea-direct-kenya",
     previewLabel: "Source-backed build",
     previewCaption: "A direct-to-consumer tea buying flow with factory choice",

@@ -9,7 +9,14 @@ const toolGroups = [
   },
   {
     title: "Mobile & product",
-    items: ["TypeScript apps", "App architecture", "UI structure", "Documentation"],
+    items: [
+      "React Native",
+      "Expo",
+      "TypeScript apps",
+      "App architecture",
+      "UI structure",
+      "Documentation",
+    ],
   },
   {
     title: "Infrastructure",
