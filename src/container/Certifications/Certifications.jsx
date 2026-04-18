@@ -6,13 +6,6 @@ import "./Certifications.scss";
 
 const certifications = [
   {
-    title: "Azure VMware Solution Workload Migration with VMware HCX",
-    issuer: "VMware",
-    type: "Professional",
-    fileUrl: "/certificates/azure-vmware-solution-workload-migration-with-vmware-hcx.pdf",
-    verificationPending: true,
-  },
-  {
     title: "Fortigate Operator Certification",
     issuer: "Fortinet",
     type: "Professional",
@@ -109,6 +102,13 @@ const certifications = [
     type: "Academic",
     fileUrl: "/certificates/degree-certificate.pdf",
     verificationPending: false,
+  },
+  {
+    title: "Azure VMware Solution Workload Migration with VMware HCX",
+    issuer: "VMware",
+    type: "Professional",
+    fileUrl: "/certificates/azure-vmware-solution-workload-migration-with-vmware-hcx.pdf",
+    verificationPending: true,
   },
 ];
 

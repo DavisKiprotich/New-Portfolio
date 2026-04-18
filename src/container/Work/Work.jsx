@@ -24,9 +24,9 @@ const projects = [
     categoryLabel: "Web",
     label: "Company website",
     summary:
-      "A company website built to present services clearly while supporting the digital presence of a technical business.",
-    stack: ["HTML", "CSS", "Business site"],
-    liveUrl: "https://netline-technologies.vercel.app",
+      "A WordPress company website built to present services clearly while supporting the digital presence of a technical business.",
+    stack: ["WordPress", "Business site", "Company website"],
+    liveUrl: "https://www.netline.co.ke/",
     sourceUrl: "https://github.com/DavisKiprotich/Netline-technologies",
     previewLabel: "Company site preview",
     previewCaption: "Service-led structure for a technical business brand",
@@ -56,19 +56,6 @@ const projects = [
     sourceUrl: "https://github.com/DavisKiprotich/Todo-list-simplified",
     previewLabel: "Utility workflow",
     previewCaption: "A clean task flow built around usability and speed",
-  },
-  {
-    title: "Drum Machine",
-    category: "web",
-    categoryLabel: "Web",
-    label: "Interactive UI",
-    summary:
-      "An interactive frontend exercise that focuses on event handling, audio triggers, and responsive interface behavior.",
-    stack: ["JavaScript", "UI interaction", "Vercel"],
-    liveUrl: "https://drum-machine-nine-rose.vercel.app",
-    sourceUrl: "https://github.com/DavisKiprotich/Drum-Machine",
-    previewLabel: "Interaction preview",
-    previewCaption: "Event-driven controls with responsive feedback",
   },
   {
     title: "ZK Secure Shop KE",
@@ -186,8 +173,7 @@ const projects = [
     stack: ["Routers", "Fuel probes", "DC meters"],
     overviewUrl: "#experience",
     sourcePrivate: true,
-    previewLabel: "Overview preview",
-    previewCaption: "Live visibility across field devices and site conditions",
+    showPreview: false,
     note: "These were real operational deployments, so source and configurations remain private.",
   },
   {
@@ -200,35 +186,32 @@ const projects = [
     stack: ["Monitoring", "Power systems", "Integration"],
     overviewUrl: "#experience",
     sourcePrivate: true,
-    previewLabel: "Overview preview",
-    previewCaption: "Connected monitoring for power-facing engineering work",
+    showPreview: false,
     note: "Shown as engineering work rather than open-source code because the deployments were client-facing.",
   },
   {
     title: "CI/CD Pipeline Lab",
     category: "power-it",
-    categoryLabel: "Power & IT",
+    categoryLabel: "Power & IT (IoT)",
     label: "IT workflow",
     summary:
       "Hands-on CI/CD work that reflects the IT side of the portfolio and the move toward repeatable delivery practices.",
     stack: ["CI/CD", "Automation", "DevOps"],
     overviewUrl: "https://github.com/DavisKiprotich/CI-CD-Pipeline",
     sourceUrl: "https://github.com/DavisKiprotich/CI-CD-Pipeline",
-    previewLabel: "Workflow preview",
-    previewCaption: "Repeatable delivery and automation-oriented engineering",
+    showPreview: false,
   },
   {
     title: "Power & IT Support Operations",
     category: "power-it",
-    categoryLabel: "Power & IT",
+    categoryLabel: "Power & IT (IoT)",
     label: "Operational engineering",
     summary:
       "Work spanning network support, VMware, system continuity, and power-facing environments where uptime and response matter.",
     stack: ["Networking", "VMware", "Support operations"],
     overviewUrl: "#experience",
     sourcePrivate: true,
-    previewLabel: "Operations preview",
-    previewCaption: "Infrastructure continuity, support, and uptime awareness",
+    showPreview: false,
     note: "Operational scripts, configs, and support artefacts are kept private for authenticity and client safety.",
   },
 ];
@@ -294,18 +277,20 @@ const Work = () => {
 
               <p className="project-card__summary">{project.summary}</p>
 
-              <div className="project-card__preview" aria-hidden="true">
-                <div className="project-card__preview-surface">
-                  <span />
-                  <span />
-                  <span />
-                </div>
+              {project.showPreview === false ? null : (
+                <div className="project-card__preview" aria-hidden="true">
+                  <div className="project-card__preview-surface">
+                    <span />
+                    <span />
+                    <span />
+                  </div>
 
-                <div className="project-card__preview-copy">
-                  <span>{project.previewLabel}</span>
-                  <strong>{project.previewCaption}</strong>
+                  <div className="project-card__preview-copy">
+                    <span>{project.previewLabel}</span>
+                    <strong>{project.previewCaption}</strong>
+                  </div>
                 </div>
-              </div>
+              )}
 
               <div className="pill-list project-card__stack">
                 {project.stack.map((item) => (
