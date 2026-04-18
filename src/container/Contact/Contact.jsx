@@ -1,82 +1,126 @@
-import React, { useRef }  from 'react';
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaPhone, FaXTwitter } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
-import { FaPhone } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
+
 import "./Contact.scss";
-import emailjs from '@emailjs/browser';
-import toast from 'react-hot-toast';
+
+const socialLinks = [
+  {
+    href: "https://linkedin.com/in/kiprotich-davis-652b49243/",
+    icon: <FaLinkedin />,
+    label: "LinkedIn",
+  },
+  {
+    href: "https://x.com/werigan_non/",
+    icon: <FaXTwitter />,
+    label: "X",
+  },
+  {
+    href: "https://github.com/DavisKiprotich/",
+    icon: <FaGithub />,
+    label: "GitHub",
+  },
+];
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef(null);
+  const [isSending, setIsSending] = useState(false);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = async (event) => {
+    event.preventDefault();
 
-    emailjs
-      .sendForm('service_uv42igf', 'template_eyex5t7', form.current, {
-        publicKey: 'U3yC0Wy8F6yvOuLKm',
-      })
-      .then(
-        () => {
-          toast.success('Rocketed Out');
-        },
-        (error) => {
-          toast.error(error);
-        },
-      );
-      e.target.reset();
+    if (isSending) {
+      return;
+    }
+
+    setIsSending(true);
+
+    try {
+      await emailjs.sendForm("service_uv42igf", "template_eyex5t7", form.current, {
+        publicKey: "U3yC0Wy8F6yvOuLKm",
+      });
+
+      toast.success("Message sent. I will get back to you soon.");
+      event.target.reset();
+    } catch (error) {
+      toast.error(error?.text || "Something went wrong. Please email me directly.");
+    } finally {
+      setIsSending(false);
+    }
   };
+
   return (
-    <section className="contact-section" id='contact'>
-      <h2 className='section-title'>Get In Touch</h2>
-      <div className="contact-container">
-        <div className="contact-info">
-          <h2>Kiprotich Davis</h2>
-          <p>
-            I'm always interested in hearing about new projects and opportunities. Let's
-            collaborate to bring your ideas to life!
+    <section className="contact app__section" id="contact">
+      <div className="section-shell contact__layout">
+        <div className="contact__intro">
+          <p className="section-kicker">Contact</p>
+          <h2 className="section-title">Got a project? Let&apos;s talk.</h2>
+          <p className="section-copy">
+            I&apos;m open to web, mobile, IoT, and Power &amp; IT conversations,
+            especially where practical execution matters as much as presentation.
           </p>
-          <div className="contact-details">
-            <div className="contact-item">
-              <span className="icon"><CiMail /></span>
-              <p>davyzkorir@gmail.com</p>
-            </div>
-            <div className="contact-item">
-              <span className="icon"><FaPhone /></span>
-              <p>+254 727 111 264</p>
-            </div>
+
+          <div className="contact__direct">
+            <a className="contact__direct-link" href="mailto:davyzkorir@gmail.com">
+              <CiMail />
+              davyzkorir@gmail.com
+            </a>
+            <a className="contact__direct-link" href="tel:+254727111264">
+              <FaPhone />
+              +254 727 111 264
+            </a>
           </div>
-          <div className="social-links">
-            <h4>Let's Connect:</h4>
-            <a href="https://linkedin.com/in/kiprotich-davis-652b49243/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a href="https://x.com/werigan_non/" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
-            <a href="https://github.com/DavisKiprotich/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+
+          <div className="contact__socials">
+            {socialLinks.map((link) => (
+              <a
+                className="contact__social"
+                href={link.href}
+                key={link.label}
+                rel="noreferrer"
+                target="_blank"
+              >
+                {link.icon}
+                {link.label}
+              </a>
+            ))}
           </div>
         </div>
-        <div className="contact-form">
-          <form ref={form} onSubmit={sendEmail}>
-            <div className="form-group">
-              <label htmlFor="name">Your Name</label>
-              <input className='textarea' type="text" id="name" placeholder="John Doe" name="from_name" required/>
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Your Email</label>
-              <input className='textarea' type="email" id="email" placeholder="john@example.com" name="from_email" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message">Your Message</label>
-              <textarea name='message'  id="message" placeholder="Hello, I would like to talk about..."></textarea>
-            </div>
-            <button type="submit" value="Send" className="send-button">
-              <span>Send Message</span>
+
+        <div className="contact__form-wrap">
+          <h3>Estimate your project? Let me know here.</h3>
+
+          <form className="contact__form" onSubmit={sendEmail} ref={form}>
+            <label className="contact__field">
+              <span>Your name</span>
+              <input name="from_name" placeholder="John Doe" required type="text" />
+            </label>
+
+            <label className="contact__field">
+              <span>Your email</span>
+              <input name="from_email" placeholder="john@example.com" required type="email" />
+            </label>
+
+            <label className="contact__field">
+              <span>Tell me about your project</span>
+              <textarea
+                name="message"
+                placeholder="Web, mobile, IoT, Power & IT, redesigns, collaboration..."
+                required
+              />
+            </label>
+
+            <button className="contact__submit" disabled={isSending} type="submit">
+              {isSending ? "Sending..." : "Send message"}
             </button>
           </form>
         </div>
       </div>
-    </section> 
-  )
-}
+    </section>
+  );
+};
 
-export default Contact
+export default Contact;

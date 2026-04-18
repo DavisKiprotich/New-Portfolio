@@ -1,123 +1,324 @@
 import React, { useState } from "react";
+import { FaApple, FaGithub, FaGooglePlay } from "react-icons/fa";
+import { FiArrowUpRight, FiLock } from "react-icons/fi";
+
 import "./Work.scss";
-import image1 from "../../assets/Netline.png";
-import image2 from "../../assets/DZilla.png";
-import image3 from "../../assets/about5.png";
-import image4 from "../../assets/about3.png";
-import image5 from "../../assets/about1.png";
-import image6 from "../../assets/about2.png";
-import image7 from "../../assets/about04.png";
+
+const projects = [
+  {
+    title: "DavidZilla Creatives",
+    category: "web",
+    categoryLabel: "Web",
+    label: "Hosted website",
+    summary:
+      "A creative portfolio experience with stronger typography, section rhythm, and a presentation style that goes beyond a standard template.",
+    stack: ["JavaScript", "Frontend UI", "Vercel"],
+    liveUrl: "https://david-zilla-creatives.vercel.app",
+    sourceUrl: "https://github.com/DavisKiprotich/DavidZilla-Creatives",
+  },
+  {
+    title: "Netline Technologies",
+    category: "web",
+    categoryLabel: "Web",
+    label: "Company website",
+    summary:
+      "A company website built to present services clearly while supporting the digital presence of a technical business.",
+    stack: ["HTML", "CSS", "Business site"],
+    liveUrl: "https://netline-technologies.vercel.app",
+    sourceUrl: "https://github.com/DavisKiprotich/Netline-technologies",
+  },
+  {
+    title: "React Calculator",
+    category: "web",
+    categoryLabel: "Web",
+    label: "Frontend project",
+    summary:
+      "A focused React build that demonstrates component state, interaction handling, and clean UI composition.",
+    stack: ["React", "JavaScript", "Vercel"],
+    liveUrl: "https://react-calculator-five-inky.vercel.app",
+    sourceUrl: "https://github.com/DavisKiprotich/React-calculator",
+  },
+  {
+    title: "Todo List Simplified",
+    category: "web",
+    categoryLabel: "Web",
+    label: "Utility product",
+    summary:
+      "A lightweight task app built around usability, transitions, and a simple state-driven experience.",
+    stack: ["React", "State management", "Vercel"],
+    liveUrl: "https://todo-list-simplified.vercel.app",
+    sourceUrl: "https://github.com/DavisKiprotich/Todo-list-simplified",
+  },
+  {
+    title: "Drum Machine",
+    category: "web",
+    categoryLabel: "Web",
+    label: "Interactive UI",
+    summary:
+      "An interactive frontend exercise that focuses on event handling, audio triggers, and responsive interface behavior.",
+    stack: ["JavaScript", "UI interaction", "Vercel"],
+    liveUrl: "https://drum-machine-nine-rose.vercel.app",
+    sourceUrl: "https://github.com/DavisKiprotich/Drum-Machine",
+  },
+  {
+    title: "ZK Secure Shop KE",
+    category: "web",
+    categoryLabel: "Web",
+    label: "Ecommerce website",
+    summary:
+      "An ecommerce website for security systems, structured to present products clearly and support a more business-ready storefront experience.",
+    stack: ["Ecommerce", "Security systems", "Netlify"],
+    liveUrl: "https://zksecureshopke.netlify.app/",
+    sourcePrivate: true,
+    note: "The live site is public. Source is not currently published in a public repository.",
+  },
+  {
+    title: "Storease",
+    category: "mobile",
+    categoryLabel: "Mobile",
+    label: "Play Store app",
+    summary:
+      "A published mobile application available on the Play Store, included here as part of the software side of the portfolio.",
+    stack: ["Mobile app", "Play Store", "Product build"],
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.daviskiprotich.storease",
+    iosPending: true,
+    sourcePrivate: true,
+    note: "Play Store version is live. iOS link will be added once available.",
+  },
+  {
+    title: "Sermon Mate",
+    category: "mobile",
+    categoryLabel: "Mobile",
+    label: "Play Store app",
+    summary:
+      "A sermon-focused mobile application published on the Play Store and presented here as part of my mobile product work.",
+    stack: ["Mobile app", "Play Store", "App publishing"],
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.kiprotich.sermonmate",
+    iosPending: true,
+    sourcePrivate: true,
+    note: "Play Store version is live. iOS link will be added once available.",
+  },
+  {
+    title: "BabyBite: Mealplanner for Babies",
+    category: "mobile",
+    categoryLabel: "Mobile",
+    label: "Play Store app",
+    summary:
+      "A baby meal planning application built for practical everyday use and now published on the Play Store.",
+    stack: ["Meal planning", "Mobile app", "Play Store"],
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=app.rork.babybite_guide",
+    iosPending: true,
+    sourcePrivate: true,
+    note: "Play Store version is live. iOS link will be added once available.",
+  },
+  {
+    title: "FastFlow",
+    category: "mobile",
+    categoryLabel: "Mobile",
+    label: "Play Store app",
+    summary:
+      "A fasting tracker app that also supports weight tracking and hydration planning, published on the Play Store.",
+    stack: ["Fasting tracker", "Weight tracking", "Hydration plan"],
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.kufungatracker.app",
+    iosPending: true,
+    sourcePrivate: true,
+    note: "Play Store version is live. iOS link will be added once available.",
+  },
+  {
+    title: "PdfImager",
+    category: "mobile",
+    categoryLabel: "Mobile",
+    label: "Play Store app",
+    summary:
+      "A PDF-to-Word and image converter app that connects utility-focused product thinking with public mobile delivery.",
+    stack: ["PDF conversion", "Utility app", "Play Store"],
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.karoti.pdfimager",
+    iosPending: true,
+    sourceUrl: "https://github.com/DavisKiprotich/pdf-imager",
+    note: "Play Store version is live. iOS link will be added once available.",
+  },
+  {
+    title: "Site Monitoring Deployments",
+    category: "iot",
+    categoryLabel: "IoT",
+    label: "Field deployment",
+    summary:
+      "Operational integration work around routers, fuel probes, and DC meters used to improve live site monitoring and visibility.",
+    stack: ["Routers", "Fuel probes", "DC meters"],
+    overviewUrl: "#experience",
+    sourcePrivate: true,
+    note: "These were real operational deployments, so source and configurations remain private.",
+  },
+  {
+    title: "Smart Power Integrations",
+    category: "iot",
+    categoryLabel: "IoT",
+    label: "Connected systems",
+    summary:
+      "IoT-focused integration work for connected power systems, monitoring, and practical site-level visibility in live environments.",
+    stack: ["Monitoring", "Power systems", "Integration"],
+    overviewUrl: "#experience",
+    sourcePrivate: true,
+    note: "Shown as engineering work rather than open-source code because the deployments were client-facing.",
+  },
+  {
+    title: "CI/CD Pipeline Lab",
+    category: "power-it",
+    categoryLabel: "Power & IT",
+    label: "IT workflow",
+    summary:
+      "Hands-on CI/CD work that reflects the IT side of the portfolio and the move toward repeatable delivery practices.",
+    stack: ["CI/CD", "Automation", "DevOps"],
+    overviewUrl: "https://github.com/DavisKiprotich/CI-CD-Pipeline",
+    sourceUrl: "https://github.com/DavisKiprotich/CI-CD-Pipeline",
+  },
+  {
+    title: "Power & IT Support Operations",
+    category: "power-it",
+    categoryLabel: "Power & IT",
+    label: "Operational engineering",
+    summary:
+      "Work spanning network support, VMware, system continuity, and power-facing environments where uptime and response matter.",
+    stack: ["Networking", "VMware", "Support operations"],
+    overviewUrl: "#experience",
+    sourcePrivate: true,
+    note: "Operational scripts, configs, and support artefacts are kept private for authenticity and client safety.",
+  },
+];
+
+const filters = [
+  { label: "All", value: "all" },
+  { label: "Web", value: "web" },
+  { label: "Mobile", value: "mobile" },
+  { label: "IoT", value: "iot" },
+  { label: "Power & IT", value: "power-it" },
+];
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("all");
 
-  const projects = [
-    {
-      image: image1,
-      title: "Netline Technologies Limited",
-      technologies: ["Wordpress"],
-      category: "wordpress",
-      link: "https://netline.co.ke/",
-    },
-    {
-      image: image2,
-      title: "DZilla Creatives",
-      technologies: ["Next.js", "Tailwind CSS"],
-      category: "react",
-      link: "https://elegant-gumdrop-3fbdae.netlify.app/",
-    },
-    {
-      image: image3,
-      title: "React Calculator",
-      technologies: ["React"],
-      category: "react",
-      link: "https://react-calculator-five-inky.vercel.app/",
-    },
-    {
-      image: image4,
-      title: "Portfolio",
-      technologies: ["React", "CSS"],
-      category: "react",
-      link: "https://d-zilla-creatives-vvi5.vercel.app/",
-    },
-    {
-      image: image5,
-      title: "Landing Pages",
-      technologies: ["React", "CSS"],
-      category: "react",
-      link: "https://netline-technologies.vercel.app/",
-    },
-    {
-      image: image6,
-      title: "Todo List",
-      technologies: ["React", "CSS"],
-      category: "react",
-      link: "https://todo-list-simplified.vercel.app/",
-    },
-    {
-      image: image7,
-      title: "Urban Threads",
-      technologies: ["React", "CSS"],
-      category: "react",
-      link: "https://ever-trendy-website-q8ynmj7gu-daviskiprotich.vercel.app/",
-    },
-  ];
-
-  const filters = [
-    { label: "All Projects", value: "all" },
-    { label: "React / Next.js", value: "react" },
-    { label: "IoT Projects", value: "iot" },
-    { label: "Wordpress", value: "wordpress" },
-    { label: "Networking", value: "networking" },
-    { label: "Blogs", value: "blog" },
-  ];
-
   const filteredProjects =
     activeFilter === "all"
       ? projects
-      : projects.filter((p) => p.category === activeFilter);
+      : projects.filter((project) => project.category === activeFilter);
 
   return (
-    <section className="featured-work" id="work">
-      <h2 className="section-title-fw">Featured Work</h2>
-
-      {/* filter tab */}
-      <div className="filter-bar">
-        {filters.map((filter, index) => (
-          <button
-            key={index}
-            className={`filter-btn ${
-              activeFilter === filter.value ? "active" : ""
-            }`}
-            onClick={() => setActiveFilter(filter.value)}
-          >
-            {filter.label}
-          </button>
-        ))}
-      </div>
-
-      <div className="projects-grid">
-        {filteredProjects.map((project, index) => (
-          <div className="project-card" key={index}>
-            <img
-              src={project.image}
-              alt={project.title}
-              className="project-image"
-            />
-            <div className="overlay">
-              <h3 className="project-title">{project.title}</h3>
-              <p className="technologies">{project.technologies.join(" | ")}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="view-button"
-              >
-                View Project
-              </a>
-            </div>
+    <section className="projects app__section" id="work">
+      <div className="section-shell">
+        <div className="projects__toolbar">
+          <div className="section-heading projects__heading">
+            <p className="section-kicker">Projects</p>
+            <h2 className="section-title">
+              Public work, software experiments, and real engineering deployments.
+            </h2>
+            <p className="section-copy">
+              Web projects include hosted links and source code where public. Mobile
+              projects now include Play Store links, with iOS links marked as coming
+              soon. IoT and Power &amp; IT work is shown honestly, with private deployment
+              notes where public code is not available.
+            </p>
           </div>
-        ))}
+
+          <div className="projects__filters">
+            {filters.map((filter) => (
+              <button
+                className={`projects__filter ${
+                  activeFilter === filter.value ? "is-active" : ""
+                }`}
+                key={filter.value}
+                onClick={() => setActiveFilter(filter.value)}
+                type="button"
+              >
+                {filter.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="projects__grid">
+          {filteredProjects.map((project) => (
+            <article className={`project-card project-card--${project.category}`} key={project.title}>
+              <div className="project-card__head">
+                <div>
+                  <span className="project-card__category">{project.categoryLabel}</span>
+                  <h3>{project.title}</h3>
+                </div>
+                <span className="project-card__label">{project.label}</span>
+              </div>
+
+              <p className="project-card__summary">{project.summary}</p>
+
+              <div className="pill-list project-card__stack">
+                {project.stack.map((item) => (
+                  <span className="pill" key={item}>
+                    {item}
+                  </span>
+                ))}
+              </div>
+
+              <div className="project-card__links">
+                {project.liveUrl ? (
+                  <a className="project-card__link" href={project.liveUrl} rel="noreferrer" target="_blank">
+                    <FiArrowUpRight />
+                    Live site
+                  </a>
+                ) : null}
+
+                {project.playStoreUrl ? (
+                  <a
+                    className="project-card__link"
+                    href={project.playStoreUrl}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <FaGooglePlay />
+                    Play Store
+                  </a>
+                ) : null}
+
+                {project.overviewUrl ? (
+                  <a
+                    className="project-card__link"
+                    href={project.overviewUrl}
+                    rel={project.overviewUrl.startsWith("http") ? "noreferrer" : undefined}
+                    target={project.overviewUrl.startsWith("http") ? "_blank" : undefined}
+                  >
+                    <FiArrowUpRight />
+                    Overview
+                  </a>
+                ) : null}
+
+                {project.sourceUrl ? (
+                  <a className="project-card__link" href={project.sourceUrl} rel="noreferrer" target="_blank">
+                    <FaGithub />
+                    Source code
+                  </a>
+                ) : null}
+
+                {project.iosPending ? (
+                  <span className="project-card__link project-card__link--muted">
+                    <FaApple />
+                    iOS soon
+                  </span>
+                ) : null}
+
+                {project.sourcePrivate ? (
+                  <span className="project-card__link project-card__link--muted">
+                    <FiLock />
+                    Source private
+                  </span>
+                ) : null}
+              </div>
+
+              {project.note ? <p className="project-card__note">{project.note}</p> : null}
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -1,55 +1,120 @@
-import React from 'react'
+import React from "react";
 
+import "./Experience.scss";
 
-import './Experience.scss'
+const entries = [
+  {
+    company: "AlanDick & Co. (E.A) Ltd",
+    role: "Power and IT Support Engineer",
+    tag: "Current role",
+    accent: "accent",
+    summary:
+      "I support server infrastructure, networking, VMware environments, and live operational systems while also handling deployment work tied to site reliability.",
+    highlights: [
+      "Maintain networking and infrastructure continuity in operational environments.",
+      "Deploy IoT integrations such as routers, fuel probes, and DC meters.",
+      "Support power-facing systems and the technical stack around them.",
+    ],
+  },
+  {
+    company: "Netline Technologies Limited",
+    role: "Head of Operations",
+    tag: "Operations leadership",
+    accent: "muted",
+    summary:
+      "I led technical operations while also building the company website and helping improve the surrounding infrastructure footprint.",
+    highlights: [
+      "Designed and launched the company website.",
+      "Oversaw networking, electro-mechanical installations, and uptime-focused work.",
+      "Balanced delivery leadership with continued software growth.",
+    ],
+    link: "https://netline-technologies.vercel.app/",
+  },
+  {
+    company: "Freelance",
+    role: "Web and Software Projects",
+    tag: "Independent work",
+    accent: "muted",
+    summary:
+      "I have built websites, product interfaces, and software concepts that sharpen both my engineering discipline and design sensitivity.",
+    highlights: [
+      "Built hosted web projects and portfolio experiences.",
+      "Worked on app concepts and product-facing user interfaces.",
+      "Used each build to improve visual quality and delivery speed.",
+    ],
+  },
+  {
+    company: "Moi University",
+    role: "BEng Electrical & Telecommunications Engineering",
+    tag: "Education",
+    accent: "accent",
+    summary:
+      "My academic background gave me a systems-first foundation that still shapes how I approach software, infrastructure, and field deployment work.",
+    highlights: [
+      "Built a strong engineering base in electrical and telecommunications systems.",
+      "Developed the problem-solving mindset behind my software work.",
+      "Graduated with a broader technical lens than a software-only path.",
+    ],
+  },
+];
 
 const Experience = () => {
   return (
-    <section className="work-experience">
-      <h2 className="section-title-wk">My Work Experience</h2>
-      <div className="experience-cards">
-        <div className="card">
-          <span className="card-number">01</span>
-          <h3 className="card-title">
-            <span className="highlight-green">AlanDick & Co(E.A) Ltd</span>, Power and IT Support Engineer
-          </h3>
-          <p className="card-description">
-          I am responsible for maintaining and managing the server infrastructure 
-          and networking within my company, ensuring seamless operations. 
-          Additionally, I oversee cloud infrastructure utilizing VMware vSphere virtualization. 
-          My role also involves IoT deployments for site monitoring, which includes 
-          configuring routers, installing fuel probes, integrating DC meters, and servicing rectifiers. 
-          These efforts collectively contribute to a stable and efficient working environment within the telecommunications industry.
+    <section className="experience app__section" id="experience">
+      <div className="section-shell">
+        <div className="section-heading">
+          <p className="section-kicker">Experience</p>
+          <h2 className="section-title">
+            Experience and education that support the full story.
+          </h2>
+          <p className="section-copy">
+            The software projects matter, but so do the engineering environments that
+            shaped them. This section ties the two together.
           </p>
         </div>
 
-        <div className="card">
-          <span className="card-number">02</span>
-          <h3 className="card-title">
-            <span className="highlight-blue">Netline Technologies Limited</span>, Head of Operations
-          </h3>
-          <p className="card-description">
-          Led the design and creation of the <a className='no-underline' href='https://netline.co.ke/' target="_blank"><span className="highlight-blue ">Company Website</span></a> using WordPress, 
-          while also overseeing the maintenance of networking infrastructure and electro-mechanical installations. 
-          Ensured operational efficiency and system reliability across all aspects of the company’s technical operations.
-          I also took an active role in upgrading the network infrastructure while continuously enhancing my frontend web development skills.
-          </p>
-        </div>
+        <div className="experience__timeline">
+          {entries.map((entry, index) => (
+            <article
+              className={`experience__card experience__card--${entry.accent}`}
+              key={entry.company}
+            >
+              <span className="experience__number">0{index + 1}</span>
 
-        <div className="card">
-          <span className="card-number">03</span>
-          <h3 className="card-title">
-            <span className="highlight-pink">Freelancer</span>, Software Developer
-          </h3>
-          <p className="card-description">
-            I have developed and deployed several projects . I have worked with clients from all over the world, e.g., 
-            <a className='no-underline' href='#' target="_blank"><span className="highlight-pink ">myblog</span></a>, 
-            <a className='no-underline' href='#' target='_blank'><span className="highlight-pink"></span></a>,  etc.
-          </p>
+              <div className="experience__content">
+                <div className="experience__meta">
+                  <span className="experience__tag">{entry.tag}</span>
+                  {entry.link ? (
+                    <a
+                      className="experience__link"
+                      href={entry.link}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      View related project
+                    </a>
+                  ) : null}
+                </div>
+
+                <h3>
+                  <span>{entry.company}</span>
+                  {entry.role}
+                </h3>
+
+                <p>{entry.summary}</p>
+
+                <ul>
+                  {entry.highlights.map((highlight) => (
+                    <li key={highlight}>{highlight}</li>
+                  ))}
+                </ul>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Experience;

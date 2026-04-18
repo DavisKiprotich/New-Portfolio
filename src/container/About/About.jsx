@@ -1,39 +1,66 @@
 import React from "react";
+
 import "./About.scss";
-import profile from "../../assets/profile.png";
+
+const profileCards = [
+  {
+    title: "Education",
+    text: "BEng in Electrical & Telecommunications Engineering from Moi University.",
+  },
+  {
+    title: "Working style",
+    text: "I like shipping solutions that are practical, maintainable, and grounded in real operating conditions.",
+  },
+  {
+    title: "Software angle",
+    text: "Web and mobile products are a major part of my portfolio, especially when usability and responsiveness matter.",
+  },
+  {
+    title: "Field angle",
+    text: "IoT, networking, cloud, power systems, and site support give me a broader engineering lens than a software-only profile.",
+  },
+];
 
 const About = () => {
-  // Sample code to display
-
   return (
-    <div class="about" id="about">
-      <h2 class="about-title">Who am I?</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>
-            I am an <span class="highlight">Experienced Engineer</span> and{" "}
-            <span class="highlight">Frontend Developer</span> with expertise
-            in
-            <span class="highlight"> Next JS</span>,{" "}
-            <span class="highlight">Tailwind CSS</span>, and{" "}
-            <span class="highlight">React JS</span>. I am also proficient in{" "}
-            <span class="highlight">Cloud Computing and Networking</span>.
+    <section className="about-section app__section" id="about">
+      <div className="section-shell about-section__grid">
+        <div className="about-section__story">
+          <p className="section-kicker">About</p>
+          <h2 className="section-title">
+            I work best where engineering thinking meets usable software.
+          </h2>
+
+          <p className="section-copy">
+            My background is rooted in electrical and telecommunications engineering,
+            which means I naturally think about systems, reliability, deployment context,
+            and how things behave outside the ideal case.
           </p>
-          <p>
-            Over the last four years, I have gained considerable professional
-            experience in the tech industry in Penetration Testing, 
-            VMware vSphere virtualization, Bash scripting, penetration testing, and IoT.
+
+          <p className="section-copy">
+            On the software side, I build web platforms, mobile app concepts, and
+            digital interfaces that are clean, responsive, and useful. On the field
+            side, I bring experience in IoT integrations, network support, VMware,
+            cloud exposure, and Power &amp; IT operations.
           </p>
-          <p>
-            Through my experiences, I have discovered my passion for
-            mentoring, and building impactful software solutions.
+
+          <p className="section-copy">
+            That mix lets me contribute to both the visible product and the technical
+            environment around it, which is exactly how I want this portfolio to feel:
+            honest, modern, and grounded in real work.
           </p>
         </div>
-        <div class="about-image">
-          <img src={profile} alt="profile pic" />
+
+        <div className="about-section__cards">
+          {profileCards.map((card) => (
+            <article className="about-section__card" key={card.title}>
+              <h3>{card.title}</h3>
+              <p>{card.text}</p>
+            </article>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,71 +1,62 @@
 import React from "react";
-import { FaCode } from "react-icons/fa";
-import { BsRouter } from "react-icons/bs";
-import { SiKalilinux } from "react-icons/si";
-import { TbCloudNetwork } from "react-icons/tb";
+import { FiCpu, FiGlobe, FiSmartphone, FiZap } from "react-icons/fi";
 
 import "./Skills.scss";
 
+const focusAreas = [
+  {
+    icon: <FiGlobe />,
+    title: "Web Development",
+    description:
+      "Responsive websites, company platforms, dashboards, and portfolio experiences with modern frontend tooling.",
+    accent: true,
+  },
+  {
+    icon: <FiSmartphone />,
+    title: "Mobile Development",
+    description:
+      "Mobile application work structured for real product delivery, store-ready publishing, and source-backed portfolio presentation.",
+  },
+  {
+    icon: <FiCpu />,
+    title: "IoT Systems",
+    description:
+      "Field integrations involving routers, fuel probes, DC meters, and connected monitoring setups for operational visibility.",
+  },
+  {
+    icon: <FiZap />,
+    title: "Power & IT",
+    description:
+      "Networking, VMware, cloud exposure, CI/CD workflows, and technical support shaped by infrastructure and power environments.",
+  },
+];
+
 const Skills = () => {
   return (
-    <section class="skillset" id="skills">
-      <h2 class="skillset-title-ex">My Expertise</h2>
-      <div class="skills-container">
-        <div class="skill-card">
-          <div class="icon">
-            <i class="fas fa-code">
-              <FaCode />
-            </i>
-          </div>
-          <h3 class="skill-title">Frontend Developer</h3>
-          <p class="skill-description">
-            I have a solid foundation in frontend development and can build
-            websites from the ground up. My expertise includes HTML, CSS,
-            JavaScript, and modern frameworks like React, Next.js and Tailwind CSS.
+    <section className="focus app__section" id="skills">
+      <div className="section-shell">
+        <div className="section-heading focus__heading">
+          <p className="section-kicker">Core Focus</p>
+          <h2 className="section-title">
+            Four areas define how I work and what I build.
+          </h2>
+          <p className="section-copy">
+            The portfolio is not centered on only one lane. It reflects the mix of
+            software, field systems, and technical operations that best represents my work.
           </p>
         </div>
 
-        <div class="skill-card">
-          <div class="icon">
-            <i class="fas fa-server">
-              <BsRouter />
-            </i>
-          </div>
-          <h3 class="skill-title">IoT Solutions</h3>
-          <p class="skill-description">
-          Proficient in deploying IoT systems, including the installation and configuration of routers, 
-          integration of fuel probes for real-time monitoring, and DC meters for energy management. 
-          Skilled in implementing smart power systems to enhance efficiency and ensure seamless connectivity in diverse environments.
-          </p>
-        </div>
-
-        <div class="skill-card">
-          <div class="icon">
-            <i class="fas fa-pencil-alt">
-              <SiKalilinux /> 
-            </i>
-          </div>
-          <h3 class="skill-title">Ethical Hacking</h3>
-          <p class="skill-description">
-          Experienced in ethical hacking and penetration testing using tools such as Kali Linux and Wireshark, 
-          ensuring robust security by identifying vulnerabilities and strengthening system defenses.
-          </p>
-        </div>
-
-        <div class="skill-card">
-          <div class="icon">
-            <i class="fas fa-database">
-              <TbCloudNetwork />
-            </i>
-          </div>
-          <h3 class="skill-title">Cloud and Networking</h3>
-          <p class="skill-description">
-          Skilled in cloud infrastructure management, 
-          utilizing VMware vSphere for virtualization to 
-          optimize resources and streamline operations. 
-          Possesses strong networking expertise, ensuring seamless connectivity and 
-          maintaining the stability of systems to support business continuity and productivity.
-          </p>
+        <div className="focus__grid">
+          {focusAreas.map((item) => (
+            <article
+              className={`focus__card ${item.accent ? "focus__card--accent" : ""}`}
+              key={item.title}
+            >
+              <span className="focus__icon">{item.icon}</span>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          ))}
         </div>
       </div>
     </section>

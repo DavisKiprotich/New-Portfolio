@@ -1,46 +1,60 @@
 import React from "react";
+import { Toaster } from "react-hot-toast";
 
+import { Navbar } from "./components";
 import {
   About,
-  Footer,
-  Header,
-  Work,
-  Skills,
-  Tech,
+  Certifications,
   Contact,
   Experience,
+  Footer,
+  Header,
+  Skills,
+  Tech,
+  Work,
 } from "./container";
-import { Navbar } from "./components";
 import "./App.scss";
-import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
     <div className="app">
       <Navbar />
-      <Header />
-      <About />
-      <Skills />
-      <Tech />
-      <Experience />
-      <Work />
-      <Contact />
+
+      <main className="app__main">
+        <Header />
+        <About />
+        <Skills />
+        <Work />
+        <Tech />
+        <Certifications />
+        <Experience />
+        <Contact />
+      </main>
+
       <Toaster
         position="top-center"
         toastOptions={{
+          duration: 4000,
+          style: {
+            background: "#383d50",
+            color: "#f4f5f8",
+            border: "1px solid rgba(255, 255, 255, 0.08)",
+          },
           success: {
-            style: {
-              background: "var(--text-color)",
-              color: "white",
+            iconTheme: {
+              primary: "#f2b53d",
+              secondary: "#1f2230",
             },
           },
           error: {
-            style: {
-              background: "red",
+            iconTheme: {
+              primary: "#ef4444",
+              secondary: "#ffffff",
             },
           },
         }}
       />
+
       <Footer />
     </div>
   );
