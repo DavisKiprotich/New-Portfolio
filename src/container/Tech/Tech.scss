@@ -1,31 +1,230 @@
 .tools__layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
   gap: 1.5rem;
   align-items: start;
 }
 
-.tools__groups {
+.tools__heading {
+  position: sticky;
+  top: 6.8rem;
+}
+
+.tools__signal {
+  display: grid;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  padding: 1.35rem;
+}
+
+.tools__signal-row {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.tools__signal-row + .tools__signal-row {
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-line);
+}
+
+.tools__signal-row strong {
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.tools__signal-row p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.tools__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.tools__card {
+  --tools-accent-rgb: 242, 181, 61;
+  --tools-accent-solid: #f2b53d;
+
+  position: relative;
+  padding: 1.35rem;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    radial-gradient(circle at top right, rgba(var(--tools-accent-rgb), 0.16), transparent 34%),
+    linear-gradient(160deg, rgba(var(--tools-accent-rgb), 0.12), rgba(49, 53, 69, 0.92) 38%),
+    rgba(255, 255, 255, 0.04);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.tools__card::after {
+  content: "";
+  position: absolute;
+  inset: auto -3.5rem -4.5rem auto;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(var(--tools-accent-rgb), 0.18), transparent 68%);
+  pointer-events: none;
+}
+
+.tools__card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(var(--tools-accent-rgb), 0.28);
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.22);
+}
+
+.tools__card--frontend {
+  --tools-accent-rgb: 242, 181, 61;
+  --tools-accent-solid: #f2b53d;
+}
+
+.tools__card--mobile {
+  --tools-accent-rgb: 114, 164, 255;
+  --tools-accent-solid: #8cb5ff;
+}
+
+.tools__card--infrastructure {
+  --tools-accent-rgb: 113, 192, 186;
+  --tools-accent-solid: #71c0ba;
+}
+
+.tools__card--field {
+  --tools-accent-rgb: 194, 160, 98;
+  --tools-accent-solid: #d3b077;
+}
+
+.tools__card-head {
   display: grid;
   gap: 1rem;
 }
 
-.tools__group {
-  padding: 1.4rem;
-  border-radius: 26px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--color-border);
+.tools__card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 18px;
+  background: rgba(var(--tools-accent-rgb), 0.16);
+  border: 1px solid rgba(var(--tools-accent-rgb), 0.24);
+  color: var(--tools-accent-solid);
+  font-size: 1.25rem;
 }
 
-.tools__group h3 {
-  margin-bottom: 1rem;
-  color: var(--color-accent);
+.tools__card-copy {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.tools__card-copy h3 {
+  color: var(--color-ink);
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.tools__card-copy p {
+  color: var(--color-muted);
+  font-size: 0.94rem;
+  line-height: 1.72;
+}
+
+.tools__metrics {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1.25rem;
+}
+
+.tools__metric {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.tools__metric-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.tools__metric-head span {
+  color: var(--color-ink);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.tools__metric-head em {
+  flex-shrink: 0;
+  color: var(--tools-accent-solid);
+  font-size: 0.74rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.tools__metric-bar {
+  position: relative;
+  height: 0.48rem;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.tools__metric-bar span {
+  display: block;
+  height: 100%;
+  width: var(--tools-level);
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    rgba(var(--tools-accent-rgb), 0.96),
+    rgba(var(--tools-accent-rgb), 0.56)
+  );
+  box-shadow: 0 0 18px rgba(var(--tools-accent-rgb), 0.22);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.95s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.tools.is-animated .tools__metric-bar span {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 1100px) {
+  .tools__grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 980px) {
   .tools__layout {
     grid-template-columns: 1fr;
+  }
+
+  .tools__heading {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .tools__card,
+  .tools__signal {
+    padding: 1.15rem;
+  }
+
+  .tools__metric-head {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
   }
 }

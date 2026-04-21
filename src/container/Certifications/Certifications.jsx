@@ -113,21 +113,21 @@ const certifications = [
     issuer: "freeCodeCamp",
     type: "Certification",
     verificationUrl:
-      "https://freecodecamp.org/certification/Humble_Beast/responsive-web-design",
+      "https://www.freecodecamp.org/certification/daviskiprotich/responsive-web-design",
   },
   {
     title: "JavaScript Algorithms and Data Structures",
     issuer: "freeCodeCamp",
     type: "Certification",
     verificationUrl:
-      "https://freecodecamp.org/certification/Humble_Beast/javascript-algorithms-and-data-structures",
+      "https://www.freecodecamp.org/certification/daviskiprotich/javascript-algorithms-and-data-structures",
   },
   {
     title: "Front End Development Libraries",
     issuer: "freeCodeCamp",
     type: "Certification",
     verificationUrl:
-      "https://freecodecamp.org/certification/Humble_Beast/front-end-development-libraries",
+      "https://www.freecodecamp.org/certification/daviskiprotich/front-end-development-libraries",
   },
   {
     title: "Azure VMware Solution Workload Migration with VMware HCX",
